@@ -1,0 +1,134 @@
+:root{
+    --orange: #ff8a00;
+    --light-orange: #ffb964;
+    --gray: #b9b9b9;
+    --black: #000000;
+    --gray-white: #f5fdfe;
+    --white: #ffffff;
+}
+
+/* Common Styles */
+
+html, body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.orange{
+    color: var(--orange);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+
+.gray{
+    color: var(--gray);
+}
+.bg-gray{
+    background-color: var(--gray);
+}
+
+.black{
+    color: var(--black);
+}
+.bg-black{
+    background-color: var(--black);
+}
+
+.gray-white{
+    color: var(--gray-white);
+}
+.bg-gray-white{
+    background-color: var(--gray-white);
+}
+
+.white{
+    color: var(--white);
+}
+.bg-white{
+    background-color: var(--white);
+}
+
+/* Overriding bootstrap css */ 
+
+.container{
+    padding-left: var(--bs-gutter-x,1.6rem) !important; 
+    padding-right: var(--bs-gutter-x,1.6rem) !important; 
+}
+
+.tooltip{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.75rem;
+}
+
+.tooltip-inner{
+    color: var(--white);
+    padding: 0.25rem 0.8rem;
+}
+
+/* NabBar */
+
+.navbar-brand .logo{
+    width: 5em;
+}
+
+.navbar-brand span{
+    font-size: 0.5rem;
+}
+
+.search-box{
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    background-color: var(--light-orange);
+    overflow: hidden;
+}
+
+.search-box select{
+    background-color: var(--light-orange);
+    border: none;
+    border-right: var(--white) solid 1px; 
+    color: var(--white);
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem; 
+    background-position:right 15px;
+}
+
+.search-box select:hover{
+    cursor: pointer;
+}
+
+.search-box input{
+    background-color: var(--light-orange);
+    border: none;
+    color: var(--white);
+    margin-left: 0.6rem;
+    padding-right: 2rem;
+}
+
+.search-box input::placeholder{
+    color: var(--white);
+    opacity: 1;
+}
+
+.search-box input:active, .search-box input:focus-visible{
+    border: none;
+    outline: none;
+}
+
+.search-box a{
+
+}
+
+.svg-container{
+
+}
+
+.nav-svg{
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: 0.2s ease-in-out;
+}
+
+.svg-container:hover .nav-svg{
+    fill: var(--black);
+    cursor: pointer;
+}
