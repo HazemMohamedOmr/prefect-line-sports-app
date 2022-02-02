@@ -65,7 +65,11 @@ html, body{
     padding: 0.25rem 0.8rem;
 }
 
-/* NabBar */
+.navbar-light .navbar-toggler{
+    border: none;
+}
+
+/* header */
 
 .navbar-brand .logo{
     width: 5em;
@@ -115,14 +119,6 @@ html, body{
     outline: none;
 }
 
-.search-box a{
-
-}
-
-.svg-container{
-
-}
-
 .svg-container .notification{
     position: absolute;
     background: #ffffff;
@@ -158,3 +154,29 @@ html, body{
 .svg-container:hover .notification{
     visibility: hidden;
 }
+
+ul .menu{
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--black) !important;
+    transition: 0.2s ease;
+}
+
+ul .menu:hover{
+    color: var(--orange) !important;
+}
+
+ul .menu:hover .ico{
+    color: var(--orange);
+}
+
+.dropdown .ico{
+    position: absolute;
+    top: 12px;
+    right: -7px;
+    color: var(--black);
+    transition: 0.2s ease;
+}
+
+/* Footer */
