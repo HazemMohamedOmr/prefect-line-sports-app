@@ -13,3 +13,33 @@ $('.main-carousel').owlCarousel({
   autoplayTimeout:5000,
   autoplayHoverPause:true
 })
+
+$('.partner-slider').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  autoplay:true,
+  autoplayTimeout:5000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+})
+
+let owlPrev = document.querySelectorAll('.partner-slider .owl-prev');
+owlPrev.forEach(element => {
+  element.innerHTML = "<i class='fas fa-chevron-left'></i>";
+});
+
+let owlNext = document.querySelectorAll('.partner-slider .owl-next');
+owlNext.forEach(element => {
+  element.innerHTML = "<i class='fas fa-chevron-right'></i>";
+});

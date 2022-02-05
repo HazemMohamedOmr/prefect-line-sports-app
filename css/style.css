@@ -79,7 +79,270 @@ ul{
     padding: 0;
 }
 
-/* header */
+/* common sections */
+
+    /* sign */
+
+.sign-wel{
+    background-image: url("../assets/img/Mask\ Group\ 1.png");
+    background-color: #f5fdfe;
+    height: 300px;
+    display: grid;
+    place-content: center;
+}
+
+.sign-wel h1{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.sign-contain{
+    background-color: #F5FDFE;
+    border-radius: 15px;
+    position: relative;
+}
+
+.sign-contain .sign-butt{
+    display: flex;
+    justify-content: end;
+}
+
+.sign-contain .sign-butt .btn-sign{
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    height: 46px;
+    width: 183px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 60px #00000012;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.sign-contain .sign-butt .btn-sign:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.sign-contain .sign-butt .bord::after{
+    content: "";
+    position: absolute;
+    background-color: #DFDFDF;
+    width: 1px;
+    height: 28px;
+    top: 8px;
+    right: -16px;
+}
+
+.sign-contain .sign-butt .active{
+    background-color: var(--orange);
+    color: var(--white);
+    box-shadow: none;
+}
+
+.sign-contain .sign-form{
+    display: flex;
+    justify-content: end;
+}
+
+.sign-contain .sign-form form{
+    width: 73%;
+}
+
+.sign-contain .sign-form form input, .sign-contain .sign-form form button{
+    width: 100%;
+    border: none;
+    box-shadow: 10px 10px 20px #0000000A;
+    border-radius: 5px;
+    height: 58px;
+    transform: all 0.2s ease;
+}
+
+.sign-contain .sign-form form button{
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-contain .sign-form form input:active, input:focus-visible{
+    outline: solid 2px #0000000A;
+}
+
+.sign-contain .sign-form form input::placeholder{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #bfbfbf;
+    font-weight: 600;
+}
+
+.sign-contain .sign-form .input-group i{
+    position: absolute;
+    color: #bfbfbf;
+    font-size: 1.4rem;
+    padding: 1rem;
+    right: 5px;
+}
+
+.sign-contain .sign-form .sign-social{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.sign-contain .floating-logo{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 362px;
+    height: 362px;
+    background-color: var(--orange);
+    box-shadow: 0px 30px 80px #00000014;
+    border: 25px solid #FFFFFF;
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-contain .floating-logo img{
+    width: 195px;
+}
+
+    /* partners */
+
+.partner .title{
+    text-align: center;
+}
+
+.partner .title .mini-title{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--orange);
+    text-transform: uppercase;
+    line-height: 18px;
+}
+
+.partner .title .qoute{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: capitalize;
+    line-height: 34px;
+}
+
+.partner .partner-slider{
+    position: relative;
+    height: 230px;
+    display: grid;
+    place-content: center;
+}
+
+.partner .partner-slider .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner .partner-slider img{
+    width: auto;
+}
+
+.partner .partner-slider .owl-dots .owl-dot span{
+    width: 12px !important;
+    height: 4px !important;
+    border-radius: 2px !important;
+    background-color: #000000 !important;
+    margin: 5px 3px !important;
+    transition: all 0.2s ease !important;
+}
+
+.partner .partner-slider .owl-dots .active span{
+    width: 22px !important;
+    background-color: var(--orange) !important;
+}
+
+.partner .partner-slider .owl-dots .owl-dot:hover span{
+    background-color: var(--orange) !important;
+}
+
+.partner .partner-slider .owl-nav{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -2;
+}
+
+.partner .partner-slider .owl-prev{
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    background-color: #F8F8F8 !important;
+    height: 100%;
+    width: 40px;
+    transition: all 0.1s ease;
+}
+
+.partner .partner-slider .owl-next{
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    background-color: #F8F8F8 !important;
+    color: var(--black) !important;
+    height: 100%;
+    width: 40px;
+    transition: all 0.1s ease;
+}
+
+.partner .partner-slider .owl-prev:hover{
+    background-color: var(--orange) !important;
+    color: var(--white) !important;
+}
+
+.partner .partner-slider .owl-next:hover{
+    background-color: var(--orange) !important;
+    color: var(--white) !important;
+}
+
+    /* membership */
+
+.membership .mini-title{
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+    color: var(--orange);
+}
+
+.membership .title{
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 34px;
+}
+
+.breaker .break{
+    border: 1px solid #D1D1D1;
+}
+
+    /* header */
 
 .navbar-brand .logo{
     width: 5em;
@@ -191,9 +454,9 @@ ul .menu:hover .ico{
 
 /* End of Header */
 
-/* Footer */
+    /* Footer */
 
-    /* UpperFooter */
+        /* UpperFooter */
 
 .upper-footer .contact{
     /* display: grid;
@@ -226,7 +489,7 @@ ul .menu:hover .ico{
     font-weight: 600;
 }
 
-    /* medium footer */
+        /* medium footer */
 
 .medium-footer{
     background-color: #F5FDFE;
@@ -296,7 +559,7 @@ ul .menu:hover .ico{
     transition: height 0ms 0ms, opacity 600ms 0ms;
 }
 
-    /* lower footer */
+        /* lower footer */
 
 .lower-footer{
     font-size: 0.7rem;
@@ -329,6 +592,10 @@ ul .menu:hover .ico{
 .lower-footer .polices a:hover{
     color: var(--light-orange);
 }
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Home Page */
 
 /* Section1 */
 
@@ -407,3 +674,8 @@ ul .menu:hover .ico{
     justify-content: center;
     align-items: center;
 }
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* sign up page */
+
