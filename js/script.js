@@ -34,12 +34,32 @@ $('.partner-slider').owlCarousel({
   }
 })
 
-let owlPrev = document.querySelectorAll('.partner-slider .owl-prev');
+$('.category-slider').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  autoplay:true,
+  autoplayTimeout:5000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
+})
+
+let owlPrev = document.querySelectorAll('.owl-prev');
 owlPrev.forEach(element => {
   element.innerHTML = "<i class='fas fa-chevron-left'></i>";
 });
 
-let owlNext = document.querySelectorAll('.partner-slider .owl-next');
+let owlNext = document.querySelectorAll('.owl-next');
 owlNext.forEach(element => {
   element.innerHTML = "<i class='fas fa-chevron-right'></i>";
 });
