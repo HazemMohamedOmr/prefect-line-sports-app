@@ -14,3 +14,6 @@
 ## Dependencies
 
 - Slider `OwlCarousel2-2.3.4`
+- Bootstrap `Bootstrap 5`
+- FontAwesome `FontAwesome 6`
+- JQuery `jquery `

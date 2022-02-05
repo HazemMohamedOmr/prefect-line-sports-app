@@ -329,3 +329,81 @@ ul .menu:hover .ico{
 .lower-footer .polices a:hover{
     color: var(--light-orange);
 }
+
+/* Section1 */
+
+.sec1{
+    background-image: url('/assets/img/Mask\ Group\ 1.png');
+    background-size: contain;
+    background-repeat: repeat;
+    height: 600px;
+}
+
+.sec1 .owl-nav{
+    display: none;
+}
+
+.sec1 .owl-dots{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+    left: -100px;
+}
+
+.sec1 .owl-dots .owl-dot span{
+    width: 12px !important;
+    height: 4px !important;
+    border-radius: 2px !important;
+    background-color: #000000 !important;
+    margin: 5px 3px !important;
+    transition: all 0.2s ease !important;
+}
+
+.sec1 .owl-dots .active span{
+    width: 22px !important;
+    background-color: var(--orange) !important;
+}
+
+.sec1 .owl-dots .owl-dot:hover span{
+    background-color: var(--orange) !important;
+}
+
+.sec1 .item .context{
+    display: grid;
+    align-content: center;
+}
+
+.sec1 .item .context .mini-title{
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.sec1 .item .context .title{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    line-height: 55px;
+    font-weight: 800;
+    color: var(--black);
+}
+
+.sec1 .item .context .info{
+    font-size: 0.85rem;
+    color: #C7C7C7;
+    line-height: 22px;
+}
+
+.sec1 .item .context .shop a{
+    width: 196px;
+    height: 54px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
