@@ -709,13 +709,13 @@ ul .menu:hover .ico{
 
 .category .category-slider{
     position: relative;
-    height: 230px;
+    height: 300px;
     display: grid;
     place-content: center;
 }
 
 .category .category-slider .owl-stage-outer{
-    height: 230px;
+    height: 300px;
 }
 
 .category .category-slider .item{
@@ -723,15 +723,22 @@ ul .menu:hover .ico{
     justify-content: center;
     align-items: end;
     position: relative;
-    height: 230px;
-    
+    height: 300px;
 }
 
-.category .category-slider .item:nth-child(odd){
+.category .category-slider .contain{
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    height: 230px;
+}
+
+.category .category-slider .contain:nth-child(odd){
     background-color: #F1F1F1;
 }
 
-.category .category-slider .item:nth-child(even){
+.category .category-slider .contain:nth-child(even){
     background-color: #fdd7c7;
 }
 
@@ -777,10 +784,11 @@ ul .menu:hover .ico{
 
 .category .category-slider .item img{
     width: auto;
-    position: absolute;
+    /* position: absolute;
     top: -55px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
+    
 }
 
 .category .category-slider .owl-dots{
