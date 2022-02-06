@@ -437,6 +437,11 @@ ul{
     visibility: hidden;
 }
 
+.svg-container .user-sign{
+    left: -55px;
+    top: 55px;
+}
+
 ul .menu{
     font-size: 0.8rem;
     font-weight: 600;
