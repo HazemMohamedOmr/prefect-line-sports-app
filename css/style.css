@@ -709,13 +709,13 @@ ul .menu:hover .ico{
 
 .category .category-slider{
     position: relative;
-    height: 230px;
+    height: 300px;
     display: grid;
     place-content: center;
 }
 
 .category .category-slider .owl-stage-outer{
-    height: 230px;
+    height: 300px;
 }
 
 .category .category-slider .item{
@@ -723,7 +723,7 @@ ul .menu:hover .ico{
     justify-content: center;
     align-items: end;
     position: relative;
-    height: 230px;
+    height: 300px;
     
 }
 
@@ -777,10 +777,6 @@ ul .menu:hover .ico{
 
 .category .category-slider .item img{
     width: auto;
-    position: absolute;
-    top: -55px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .category .category-slider .owl-dots{
