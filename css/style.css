@@ -900,6 +900,23 @@ ul .menu:hover .ico{
     background-color: #E1F6F7;
     background-image: url(../assets/img/Mask\ Group\ 4.png);
     height: 280px;
+    position: relative;
+}
+
+.products .product-slider .item .preview .deal{
+    position: absolute;
+    width: 66px;
+    height: 33px;
+    top: 20px;
+    box-shadow: 10px 10px 30px #FC581429;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 0.65rem;
+    font-weight: 800;
+    line-height: 11px;
+    text-transform: uppercase;
+    padding: 12px 10px;
 }
 
 .products .product-slider .item .preview img{
