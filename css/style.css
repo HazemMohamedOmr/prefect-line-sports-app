@@ -1196,6 +1196,64 @@ ul .menu:hover .ico{
     display: none;
 }
 
+    /* Achievements */
+
+.achievements .mini-title{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--orange);
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+}
+
+.achievements .title{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: capitalize;
+    line-height: 34px;
+}
+
+.achievements .row{
+    margin: 0;
+}
+
+.achievements .row > *{
+    padding: 0;
+}
+
+.achievements .ele{
+    height: 250px;
+}
+
+.achievements .content{
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+
+.achievements .uni{
+    background-color: var(--orange);
+    box-shadow: 25px 25px 50px #0000003C;
+}
+
+.achievements .content .num{
+    font-size: 2.5rem;
+    line-height: 70px;
+    font-weight: 800;
+}
+
+.achievements .content .desc{
+    font-size: 1.15rem;
+    line-height: 22px;
+    word-spacing: 2.16px;
+    font-weight: bold;
+}
+
 /* ----------------------------------------------------------------------------------------- */
 
 /* sign up page */
