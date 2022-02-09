@@ -42,15 +42,15 @@ $('.category-slider').owlCarousel({
   autoplayTimeout:5000,
   autoplayHoverPause:true,
   responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:2
-      },
-      1000:{
-          items:3
-      }
+    0:{
+        items:1
+    },
+    576:{
+        items:2
+    },
+    992:{
+        items:3
+    }
   }
 })
 
@@ -65,10 +65,16 @@ $('.product-slider').owlCarousel({
       0:{
           items:1
       },
-      600:{
+      576:{
+          items:2
+      },
+      768:{
           items:3
       },
-      1000:{
+      992:{
+          items:3
+      },
+      1200:{
           items:4
       }
   }
@@ -79,9 +85,9 @@ $('.thumbnail-slider').owlCarousel({
   margin:10,
   nav:true,
   items:1,
-  // autoplay:true,
-  // autoplayTimeout:5000,
-  // autoplayHoverPause:true,
+  autoplay:true,
+  autoplayTimeout:5000,
+  autoplayHoverPause:true,
 })
 
 

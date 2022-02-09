@@ -1200,3 +1200,12 @@ ul .menu:hover .ico{
 
 /* sign up page */
 
+
+
+/* Media Query */
+
+@media only screen and (max-width: 576px){
+    .owl-nav{
+        display: none;
+    }
+}
