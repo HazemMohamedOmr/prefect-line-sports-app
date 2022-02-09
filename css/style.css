@@ -595,6 +595,13 @@ ul .menu:hover .ico{
     color: var(--orange);
 }
 
+.lower-footer .polices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .lower-footer .polices ul{
     margin-bottom: 0;
 }
@@ -609,6 +616,13 @@ ul .menu:hover .ico{
 
 .lower-footer .polices a:hover{
     color: var(--light-orange);
+}
+
+.lower-footer .coming-soon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* --------------------------------------------------------------------------------------- */
