@@ -1024,6 +1024,164 @@ ul .menu:hover .ico{
     color: var(--white) !important;
 }
 
+    /* thumbnail */
+
+.thumbnail .title{
+    text-align: center;
+}
+
+.thumbnail .title .mini-title{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--orange);
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+}
+
+.thumbnail .title .qoute{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: capitalize;
+    line-height: 34px;
+}
+
+.thumbnail .thumbnail-slider{
+    position: relative;
+    height: 230px;
+    display: grid;
+    place-content: center;
+}
+
+.thumbnail .thumbnail-slider .owl-stage-outer{
+    height: 440px;
+}
+
+.thumbnail .thumbnail-slider .down-item{
+    background: transparent linear-gradient(108deg, #FFA133 0%, var(--orange) 100%) 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    height: 360px;
+    width: 100%;
+    position: relative;
+}
+
+.thumbnail .thumbnail-slider .item{
+    height: 440px;
+    margin-top: 80px;
+}
+
+.thumbnail .thumbnail-slider .item .white-background{
+    width: 70px;
+    height: 360px;
+    background-color: var(--white);
+    opacity: 0.2;
+    transform: skewX(12deg);
+    position: absolute;
+}
+
+.thumbnail .thumbnail-slider .item .bg1{
+    top: 0;
+    left: 9%;
+}
+
+.thumbnail .thumbnail-slider .item .bg2{
+    top: 0;
+    left: 18%;
+}
+
+.thumbnail .thumbnail-slider .item .bg3{
+    top: 0;
+    left: 65%;
+}
+
+.thumbnail .thumbnail-slider .item .bg4{
+    top: 0;
+    left: 74%;
+}
+
+.thumbnail .thumbnail-slider .item .content{
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 16%;
+    padding-left: 10%;
+}
+
+.thumbnail .thumbnail-slider .item .content .mini-title{
+    font-size: 0.85rem;
+    line-height: 14px;
+    word-spacing: 1.4px;
+}
+
+.thumbnail .thumbnail-slider .item .content .title{
+    font-size: 1.75rem;
+    line-height: 34px;
+}
+
+
+.thumbnail .thumbnail-slider .item .content ul li{
+    font-size: 0.85rem;
+    line-height: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.thumbnail .thumbnail-slider .item .content ul li i{
+    font-size: 10px;
+    line-height: 18px;
+}
+
+.thumbnail .thumbnail-slider .item .button a{
+    background: transparent linear-gradient(106deg, var(--black) 0%, #545454 100%) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    line-height: 19px;
+    color: var(--white);
+    font-weight: bold;
+    width: 196px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.thumbnail .thumbnail-slider img{
+    width: auto;
+    position: relative;
+    top: -60px;
+}
+
+.thumbnail .thumbnail-slider .owl-dots{
+    margin-top: 20px;
+}
+
+.thumbnail .thumbnail-slider .owl-dots .owl-dot span{
+    width: 12px !important;
+    height: 4px !important;
+    border-radius: 2px !important;
+    background-color: #000000 !important;
+    margin: 5px 3px !important;
+    transition: all 0.2s ease !important;
+}
+
+.thumbnail .thumbnail-slider .owl-dots .active span{
+    width: 22px !important;
+    background-color: var(--orange) !important;
+}
+
+.thumbnail .thumbnail-slider .owl-dots .owl-dot:hover span{
+    background-color: var(--orange) !important;
+}
+
+.thumbnail .thumbnail-slider .owl-nav{
+    display: none;
+}
+
 /* ----------------------------------------------------------------------------------------- */
 
 /* sign up page */

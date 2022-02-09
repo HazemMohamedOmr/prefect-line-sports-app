@@ -74,6 +74,17 @@ $('.product-slider').owlCarousel({
   }
 })
 
+$('.thumbnail-slider').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  items:1,
+  // autoplay:true,
+  // autoplayTimeout:5000,
+  // autoplayHoverPause:true,
+})
+
+
 let owlPrev = document.querySelectorAll('.owl-prev');
 owlPrev.forEach(element => {
   element.innerHTML = "<i class='fas fa-chevron-left'></i>";
