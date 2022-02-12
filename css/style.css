@@ -1038,6 +1038,125 @@ ul .menu:hover .ico{
     color: var(--white) !important;
 }
 
+    /* Similar-products */
+
+.similar-products .title{
+    text-align: left;
+}
+
+.similar-products .title .mini-title{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--orange);
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+}
+
+.similar-products .title .qoute{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: capitalize;
+    line-height: 34px;
+}
+
+.similar-products .view-all a{
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 140px;
+    height: 40px;
+    background-color: var(--orange);
+    color: var(--white);
+    display: grid;
+    place-content: center;
+    font-size: 0.75rem;
+}
+
+.similar-products .sim-product-slider .item .preview{
+    height: auto;
+    background-color: #E1F6F7;
+    background-image: url(../assets/img/Mask\ Group\ 4.png);
+    height: 280px;
+    position: relative;
+}
+
+.similar-products .sim-product-slider .item .preview .deal{
+    position: absolute;
+    width: 66px;
+    height: 33px;
+    top: 20px;
+    box-shadow: 10px 10px 30px #FC581429;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 0.65rem;
+    font-weight: 800;
+    line-height: 11px;
+    text-transform: uppercase;
+    padding: 12px 10px;
+}
+
+.similar-products .sim-product-slider .item .preview img{
+    width: 230px;
+    height: 210px;
+}
+
+.similar-products .sim-product-slider .item .preview .options a{
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    display: grid;
+    place-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.similar-products .sim-product-slider .item .preview .options .cart{
+    width: 140px;
+    height: 40px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.similar-products .sim-product-slider .item .preview .options a:hover svg{
+    fill: var(--orange);
+}
+
+.similar-products .sim-product-slider .item .preview .options .cart:hover{
+    background-color: var(--orange);
+}
+
+.similar-products .sim-product-slider .item .data{
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 800;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.similar-products .sim-product-slider .item .data .rate .fill{
+    color: var(--orange);
+}
+
+.similar-products .sim-product-slider .item .data .rate .empty{
+    color: #C7C7C7;
+}
+
+.similar-products .sim-product-slider .item .data .price span{
+    color: #C7C7C7;
+    text-decoration: line-through;
+    font-size: 0.75rem;
+    line-height: 15px;
+    margin-top: 5px;
+}
+
     /* thumbnail */
 
 .thumbnail .title{
