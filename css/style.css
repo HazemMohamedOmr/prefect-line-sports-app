@@ -1256,7 +1256,266 @@ ul .menu:hover .ico{
 
 /* ----------------------------------------------------------------------------------------- */
 
-/* sign up page */
+/* Shop page */
+
+.shop-wel{
+    background-image: url(../assets/img/Mask\ Group\ 1.png);
+    background-color: #f5fdfe;
+    height: 300px;
+}
+
+.shop-wel .text{
+    height: 300px;
+    display: grid;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.shop-wel .text .title{
+    font-size: 1.75rem;
+    line-height: 34px;
+    font-weight: 800;
+}
+
+
+.shop-wel .text .title span{
+    font-size: 2.25rem;
+    color: var(--orange);
+}
+
+
+.shop-wel .text .breadcrumb .breadcrumb-item{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.shop-wel .text .breadcrumb a{
+    transition: all 0.2s ease;
+}
+
+.shop-wel .text .breadcrumb .breadcrumb-item:hover a{
+    color: var(--orange);
+}
+
+.shop-wel .text .breadcrumb .active{
+    color: var(--orange);
+}
+
+
+.shop-wel .wel-img-contain .img1{
+    position: absolute;
+    top: -35px;
+}
+
+.shop-wel .wel-img-contain .img2{
+    position: absolute;
+    right: 0px;
+    top: -85px;
+}
+
+.shop{
+
+}
+
+.shop .preview{
+    height: auto;
+    background-color: #E1F6F7;
+    background-image: url(../assets/img/Mask\ Group\ 4.png);
+    height: 280px;
+    position: relative;
+}
+
+.shop .preview .deal{
+    position: absolute;
+    width: 66px;
+    height: 33px;
+    top: 20px;
+    box-shadow: 10px 10px 30px #FC581429;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 0.65rem;
+    font-weight: 800;
+    line-height: 11px;
+    text-transform: uppercase;
+    padding: 12px 10px;
+}
+
+.shop .preview img{
+    width: 230px;
+    height: 210px;
+}
+
+.shop .preview .options a{
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    display: grid;
+    place-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.shop .preview .options .cart{
+    width: 140px;
+    height: 40px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.shop .preview .options a:hover svg{
+    fill: var(--orange);
+}
+
+.shop .preview .options .cart:hover{
+    background-color: var(--orange);
+}
+
+.shop .data{
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 800;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.shop .data .rate .fill{
+    color: var(--orange);
+}
+
+.shop .data .rate .empty{
+    color: #C7C7C7;
+}
+
+.shop .data .price span{
+    color: #C7C7C7;
+    text-decoration: line-through;
+    font-size: 0.75rem;
+    line-height: 15px;
+    margin-top: 5px;
+}
+
+.shop .head{
+    text-transform: capitalize;
+}
+
+.shop .head .title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+.shop .head .title span{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.shop .head .sorting{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.shop .head .sorting span{
+    color: #9E9E9E;
+}
+
+.shop .head .sorting a{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 8px 22px;
+    font-size: 0.9rem;
+}
+
+.shop .filter{
+    background-color: #F8F8F8;
+    border-radius: 5px;
+}
+
+.shop .filter .accordion{
+    padding: 8px;
+}
+
+.shop .filter .accordion-item{
+    border: none;
+    border-radius: 5px;
+}
+
+.shop .filter .accordion-item button{
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.75rem;
+}
+
+.shop .filter .accordion-item button:focus, .shop .filter .accordion-button:not(.collapsed){
+    color: var(--black);
+    background-color: var(--white);
+    box-shadow: none;
+}
+
+.shop .filter .accordion-item .accordion-button::after{
+    font-family: 'Font Awesome 5 Free';
+    flex-shrink: 0;
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "\f078";
+    background-image: none;
+    transition: transform .2s ease-in-out;
+}
+
+.shop .filter .accordion-collapse{
+    background-color: #F8F8F8;
+}
+
+.shop .filter .accordion-collapse input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+
+    color: currentColor;
+    width: 13px;
+    height: 13px;
+    border: 1px solid var(--black);
+    border-radius: 3px;
+  
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease;
+}
+
+.shop .filter .accordion-collapse input[type="checkbox"]:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.42);
+}
+  
+.shop .filter .accordion-collapse input[type="checkbox"]:checked {
+    background-color: var(--orange);
+    border: none;
+}
+
+.shop .filter .accordion-collapse .input-name{
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 0.2s all ease;
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
 
 
 
