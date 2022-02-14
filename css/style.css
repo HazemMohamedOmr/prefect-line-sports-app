@@ -1636,6 +1636,130 @@ ul .menu:hover .ico{
 
 /* ----------------------------------------------------------------------------------------- */
 
+/* cart Page */
+
+.checkout .title{
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 27px;
+    color: var(--black);
+}
+
+.checkout .title span{
+    color: var(--orange);
+}
+
+.checkout .shop-address{
+    min-height: 488px;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+}
+
+.checkout .shop-address .head{
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 16px;
+    color: #FF2424;
+    text-transform: capitalize;
+}
+
+.checkout .shop-address .all-box{
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.checkout .shop-address .content label{
+    color: #B9B9B9;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 1.2rem .75rem;
+}
+
+.checkout .shop-address .content input:focus{
+    box-shadow: none;
+    border-color: #D8D8D8;
+}
+
+.checkout .shop-address .content input::-webkit-outer-spin-button,
+.checkout .shop-address .content input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.checkout .shop-address .content input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.checkout .method input[type=radio]:checked {
+    background-color: var(--light-orange);
+    border-color: var(--light-orange);
+}
+
+.checkout .method input:focus {
+    box-shadow: 0 0 0 .25rem rgb(255, 138, 0, 0.25)
+}
+
+.checkout .method label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #A1A1A1;
+    line-height: 16px;
+    text-transform: capitalize;
+}
+
+.checkout input[type=radio]:checked {
+    
+}
+
+.checkout input[type=radio]:checked ~ label {
+    color: #FF8A00;
+}
+
+.checkout .check{
+    min-height: 488px;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+}
+
+.checkout .check .title{
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 27px;
+}
+
+.checkout .check .info{
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 16px;
+}
+
+.checkout .check .total .data{
+    border-top: 1px solid #DDDDDD;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.checkout .check .discount{
+    color: #FF2424;
+}
+
+.checkout .check .next-btn a, .checkout .check .next-btn button{
+    background-color: var(--orange);
+    border-radius: 5px;
+    font-size: 1.15rem;
+    width: 100%;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--white);
+    padding: 16px 0;
+    text-transform: capitalize;
+}
+
+/* ----------------------------------------------------------------------------------------- */
 
 
 /* Media Query */
