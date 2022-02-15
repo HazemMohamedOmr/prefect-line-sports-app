@@ -122,4 +122,3 @@ let CountingDown = setInterval(() => {
 
 }, 1000)
 
-function coloring(){
