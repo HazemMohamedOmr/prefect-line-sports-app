@@ -1965,6 +1965,60 @@ ul .menu:hover .ico{
 
 /* ----------------------------------------------------------------------------------------- */
 
+    /* Shipping Policies */
+
+.shipping-policies .head{
+    text-align: center;
+}
+
+.shipping-policies .title{
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 34px;
+    color: var(--black);
+}
+
+.shipping-policies .mini-title{
+    font-size: 0.85rem;
+    font-size: 400;
+    text-transform: capitalize;
+    color: var(--gray-text);
+}
+
+.shipping-policies .ship tr{
+    height: 72px;
+}
+
+.shipping-policies .ship th{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
+.shipping-policies .ship td{
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+
+.shipping-policies .ship .big{
+    width: 27%;
+}
+
+.shipping-policies .ship .small{
+    width: 19%;
+}
+
+.shipping-policies .ship td{
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+/* ----------------------------------------------------------------------------------------- */
 
 /* Media Query */
 
@@ -1992,6 +2046,11 @@ ul .menu:hover .ico{
         width: 362px;
         height: 362px;
     }
+
+    .thumbnail .thumbnail-slider .item .white-background, .shop-wel .white-background{
+        width: 70px;
+    }
+
     .offer .content .timer{
         width: 80%;
     }
