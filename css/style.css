@@ -1873,6 +1873,54 @@ ul .menu:hover .ico{
     color: #FF8A00;
 }
 
+.checkout .cart{
+    min-height: 488px;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+}
+
+.checkout .cart .all-box{
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.checkout .cart .all-box input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+
+    width: 18px;
+    height: 18px;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+  
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease;
+}
+
+.checkout .cart .all-box input[type="checkbox"]:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.42);
+}
+  
+.checkout .cart .all-box input[type="checkbox"]:checked {
+    background-color: var(--orange);
+    border: none;
+}
+
+.checkout .cart .all-box .input-name{
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 0.2s all ease;
+}
+
+.checkout .cart .content .item{
+    background-color: #f5fdfe;
+    border-radius: 6px;
+    margin: 10px;
+    height: 200px;
+}
+
 .checkout .check{
     min-height: 488px;
     border: 1px solid #DBDBDB;
