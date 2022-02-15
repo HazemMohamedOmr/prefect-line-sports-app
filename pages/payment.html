@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Payment</title>
 
     <!-- Google fonts: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -219,82 +219,291 @@
       </nav>
     </header>
 
-    <section class="partner py-5">
+    <section class="checkout">
         <div class="container">
             <div class="title py-4">
-                <div class="mini-title">
-                    our partners
-                </div>
-                <div class="qoute">
-                    success is what we do
-                </div>
+                promo codes*
             </div>
-            <div class="partner-slider owl-carousel owl-theme py-4 my-5">
-                <div class="item">
-                    <img src="../assets/img/1618044336c4.png" alt="">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="payment">
+                        <div class="content">
+                          <form method="" action="" id="promo-form" class="row g-3 p-4 pb-0">
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input type="text" class="form-control" name="" id="floatingPromoCode" placeholder="Promo Code">
+                                <label for="floatingPromoCode">Promo Code</label>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <button class="btn" type="submit" form="promo-form">Apply</button>
+                            </div>
+                          </form>
+                          <form method="" action="" id="Payment-form" class="row g-3 p-4">
+                            <div class="title mb-1">
+                              Payments
+                            </div>
+                            <div class="col-md-6 offset-md-3 d-flex justify-content-between align-items-center">
+                              <div class="form-check d-flex justify-content-between align-items-center">
+                                <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label p-0 pt-1 ps-1" for="gridRadios1">
+                                  <img src="../assets/img/visa.png" alt="">
+                                </label>
+                              </div>
+                              <div class="form-check d-flex justify-content-between align-items-center">
+                                <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label p-0 pt-1 ps-2" for="gridRadios2">
+                                  <img src="../assets/img/mastercard-2.png" alt="">
+                                </label>
+                              </div>
+                              <div class="form-check d-flex justify-content-between align-items-center">
+                                <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label p-0 pt-1 ps-2" for="gridRadios2">
+                                  <img src="../assets/img/Mask Group 49.png" alt="">
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-floating">
+                                <input type="text" class="form-control" name="" id="floatingAddress1" placeholder="Address - 1">
+                                <label for="floatingAddress1">Cardholder Name*</label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-floating">
+                                <input type="text" class="form-control" name="" id="floatingAddress2" placeholder="Address - 2">
+                                <label for="floatingAddress2">Card Number*</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-floating">
+                                <input type="text" class="form-control" name="" id="floatingState" placeholder="State">
+                                <label for="floatingState">Expiration month</label>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-floating">
+                                <input type="text" class="form-control" name="" id="floatingCity" placeholder="City">
+                                <label for="floatingCity">Ccv Code</label>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="../assets/img/1618044362c5.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044414c7.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044456c9.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044336c4.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044362c5.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044414c7.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044456c9.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044456c9.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044336c4.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044362c5.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044414c7.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="../assets/img/1618044456c9.png" alt="">
+                <div class="col-lg-3 mt-4 mt-lg-0">
+                    <aside class="check d-flex flex-column justify-content-between">
+                        <div class="top">
+                            <div class="title p-3">
+                                order summary
+                            </div>
+                            <div class="info p-3">
+                                <div class="data d-flex justify-content-between align-items-center mb-3">
+                                    <span>subtotal</span>
+                                    <span>AED 420</span>
+                                </div>
+                                <div class="data d-flex justify-content-between align-items-center mb-3">
+                                    <span>shipping cost</span>
+                                    <span>AED 10</span>
+                                </div>
+                                <div class="data discount d-flex justify-content-between align-items-center mb-3">
+                                    <span>shipping discount</span>
+                                    <span>AED -5</span>
+                                </div>
+                                <div class="data d-flex justify-content-between align-items-center mb-3">
+                                    <span>sales taxes</span>
+                                    <span>AED 0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="total px-3">
+                                <div class="data d-flex justify-content-between align-items-center pt-4 mb-3">
+                                    <span>total</span>
+                                    <span>AED 425</span>
+                                </div>
+                            </div>
+                            <div class="next-btn p-3">
+                                <button class="btn" type="submit" form="Payment-form">confirm order</button>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="membership mb-5 pb-5">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-6">
-                  <div class="mini-title">
-                      procurement program
-                  </div>
-                  <div class="title">
-                      membership in government institutions.
-                  </div>
-              </div>
-              <div class="col-lg-2 col-sm-4 py-5 py-sm-3 py-lg-0 d-flex justify-content-center align-items-center d-lg-block">
-                  <img src="../assets/img/Khalifa-fund-Logo.png" alt="">
-              </div>
-              <div class="col-lg-2 col-sm-4 py-3 py-lg-0 d-flex justify-content-center align-items-center d-lg-block">
-                  <img src="../assets/img/sme.png" alt="">
-              </div>
-              <div class="col-lg-2 col-sm-4 py-3 py-lg-0 d-flex justify-content-center align-items-center d-lg-block">
-                  <img src="../assets/img/dd.png" alt="">
-              </div>
+    <div class="breaker my-5 py-4">
+        <div class="container">
+            <div class="break"></div>
+        </div>
+    </div>
+
+    <section class="similar-products">
+        <div class="container">
+          <div class="head d-flex justify-content-between">
+            <div class="title py-4">
+                <div class="mini-title">
+                    you may like this
+                </div>
+                <div class="qoute">
+                    similar products
+                </div>
+            </div>
+            <div class="view-all py-4">
+              <a class="btn" href="#">
+                view all
+              </a>
+            </div>
           </div>
-      </div>
+            
+            <div class="row sim-product-slider mt-4">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="item">
+                        <div class="preview">
+                          <img src="../assets/img/New_Balance_X-90png.png" alt="">
+                          <div class="options d-flex justify-content-around py-3 px-2">
+                            <a class="btn" href="#">
+                              <svg class="nav-svg nav-svg-b" fill="black" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M213.65723,181.65723l-32,32A8.00038,8.00038,0,0,1,168,208V184H48a8,8,0,0,1,0-16H168V144a8.00038,8.00038,0,0,1,13.65723-5.65723l32,32A8.00122,8.00122,0,0,1,213.65723,181.65723Zm-139.31446-64A8.00038,8.00038,0,0,0,88,112V88H208a8,8,0,0,0,0-16H88V48a8.00038,8.00038,0,0,0-13.65723-5.65723l-32,32a8.00122,8.00122,0,0,0,0,11.31446Z"/>
+                              </svg> 
+                            </a>
+                            <a class="btn cart" href="#">
+                              add to cart
+                            </a>
+                            <a class="btn" href="#">
+                              <svg class="nav-svg" fill="black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 230 230" style="enable-background:new 0 0 230 230;" xml:space="preserve">
+                                <path d="M213.588,120.982L115,213.445l-98.588-92.463C-6.537,96.466-5.26,57.99,19.248,35.047l2.227-2.083
+                                c24.51-22.942,62.984-21.674,85.934,2.842L115,43.709l7.592-7.903c22.949-24.516,61.424-25.784,85.936-2.842l2.227,2.083
+                                C235.26,57.99,236.537,96.466,213.588,120.982z"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="data py-2">
+                          <div class="name py-1">
+                            air jordan retro
+                          </div>
+                          <div class="rate py-1">
+                            <i class="fas fa-star px-1 fill"></i><i class="fas px-1 fa-star fill"></i><i class="fas fa-star px-1 fill"></i><i class="fas fa-star px-1 fill"></i><i class="fas fa-star px-1 empty"></i>
+                          </div>
+                          <div class="price py-1">
+                            aed 220 <span>250</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="item">
+                        <div class="preview">
+                          <img src="../assets/img/Nike_M2K_Tekno.png" alt="">
+                          <div class="options d-flex justify-content-around py-3 px-2">
+                            <a class="btn" href="#">
+                              <svg class="nav-svg nav-svg-b" fill="black" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M213.65723,181.65723l-32,32A8.00038,8.00038,0,0,1,168,208V184H48a8,8,0,0,1,0-16H168V144a8.00038,8.00038,0,0,1,13.65723-5.65723l32,32A8.00122,8.00122,0,0,1,213.65723,181.65723Zm-139.31446-64A8.00038,8.00038,0,0,0,88,112V88H208a8,8,0,0,0,0-16H88V48a8.00038,8.00038,0,0,0-13.65723-5.65723l-32,32a8.00122,8.00122,0,0,0,0,11.31446Z"/>
+                              </svg> 
+                            </a>
+                            <a class="btn cart" href="#">
+                              add to cart
+                            </a>
+                            <a class="btn" href="#">
+                              <svg class="nav-svg" fill="black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 230 230" style="enable-background:new 0 0 230 230;" xml:space="preserve">
+                                <path d="M213.588,120.982L115,213.445l-98.588-92.463C-6.537,96.466-5.26,57.99,19.248,35.047l2.227-2.083
+                                c24.51-22.942,62.984-21.674,85.934,2.842L115,43.709l7.592-7.903c22.949-24.516,61.424-25.784,85.936-2.842l2.227,2.083
+                                C235.26,57.99,236.537,96.466,213.588,120.982z"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="data py-2">
+                          <div class="name py-1">
+                            air jordan retro
+                          </div>
+                          <div class="rate py-1">
+                            <i class="fas fa-star px-1 fill"></i><i class="fas px-1 fa-star fill"></i><i class="fas fa-star px-1 fill"></i><i class="fas fa-star px-1 fill"></i><i class="fas fa-star px-1 empty"></i>
+                          </div>
+                          <div class="price py-1">
+                            aed 220 <span>250</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="item">
+                        <div class="preview">
+                          <img src="../assets/img/adidasFALCON.png" alt="">
+                          <div class="options d-flex justify-content-around py-3 px-2">
+                            <a class="btn" href="#">
+                              <svg class="nav-svg nav-svg-b" fill="black" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M213.65723,181.65723l-32,32A8.00038,8.00038,0,0,1,168,208V184H48a8,8,0,0,1,0-16H168V144a8.00038,8.00038,0,0,1,13.65723-5.65723l32,32A8.00122,8.00122,0,0,1,213.65723,181.65723Zm-139.31446-64A8.00038,8.00038,0,0,0,88,112V88H208a8,8,0,0,0,0-16H88V48a8.00038,8.00038,0,0,0-13.65723-5.65723l-32,32a8.00122,8.00122,0,0,0,0,11.31446Z"/>
+                              </svg> 
+                            </a>
+                            <a class="btn cart" href="#">
+                              add to cart
+                            </a>
+                            <a class="btn" href="#">
+                              <svg class="nav-svg" fill="black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 230 230" style="enable-background:new 0 0 230 230;" xml:space="preserve">
+                                <path d="M213.588,120.982L115,213.445l-98.588-92.463C-6.537,96.466-5.26,57.99,19.248,35.047l2.227-2.083
+                                c24.51-22.942,62.984-21.674,85.934,2.842L115,43.709l7.592-7.903c22.949-24.516,61.424-25.784,85.936-2.842l2.227,2.083
+                                C235.26,57.99,236.537,96.466,213.588,120.982z"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="data py-2">
+                          <div class="name py-1">
+                            air jordan retro
+                          </div>
+                          <div class="rate py-1">
+                            <i class="fas fa-star px-1 fill"></i><i class="fas px-1 fa-star fill"></i><i class="fas fa-star px-1 fill"></i><i class="fas fa-star px-1 fill"></i><i class="fas fa-star px-1 empty"></i>
+                          </div>
+                          <div class="price py-1">
+                            aed 220 <span>250</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 offset-lg-4 offset-xl-0">
+                    <div class="item">
+                        <div class="preview">
+                          <img src="../assets/img/New_Balance_X-90png.png" alt="">
+                          <div class="options d-flex justify-content-around py-3 px-2">
+                            <a class="btn" href="#">
+                              <svg class="nav-svg nav-svg-b" fill="black" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M213.65723,181.65723l-32,32A8.00038,8.00038,0,0,1,168,208V184H48a8,8,0,0,1,0-16H168V144a8.00038,8.00038,0,0,1,13.65723-5.65723l32,32A8.00122,8.00122,0,0,1,213.65723,181.65723Zm-139.31446-64A8.00038,8.00038,0,0,0,88,112V88H208a8,8,0,0,0,0-16H88V48a8.00038,8.00038,0,0,0-13.65723-5.65723l-32,32a8.00122,8.00122,0,0,0,0,11.31446Z"/>
+                              </svg> 
+                            </a>
+                            <a class="btn cart" href="#">
+                              add to cart
+                            </a>
+                            <a class="btn" href="#">
+                              <svg class="nav-svg" fill="black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 230 230" style="enable-background:new 0 0 230 230;" xml:space="preserve">
+                                <path d="M213.588,120.982L115,213.445l-98.588-92.463C-6.537,96.466-5.26,57.99,19.248,35.047l2.227-2.083
+                                c24.51-22.942,62.984-21.674,85.934,2.842L115,43.709l7.592-7.903c22.949-24.516,61.424-25.784,85.936-2.842l2.227,2.083
+                                C235.26,57.99,236.537,96.466,213.588,120.982z"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="data py-2">
+                          <div class="name py-1">
+                            air jordan retro
+                          </div>
+                          <div class="rate py-1">
+                            <i class="fas fa-star px-1 fill"></i><i class="fas px-1 fa-star fill"></i><i class="fas fa-star px-1 fill"></i><i class="fas fa-star px-1 fill"></i><i class="fas fa-star px-1 empty"></i>
+                          </div>
+                          <div class="price py-1">
+                            aed 220 <span>250</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="breaker my-5 py-4">

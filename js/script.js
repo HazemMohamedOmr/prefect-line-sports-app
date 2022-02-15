@@ -1,8 +1,10 @@
+// toggle tooltip in navbar
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+// Activate OwlCarousel Config
 
 $('.main-carousel').owlCarousel({
   items:1,
@@ -90,7 +92,7 @@ $('.thumbnail-slider').owlCarousel({
   autoplayHoverPause:true,
 })
 
-
+// Adjusting Owl nav elements
 let owlPrev = document.querySelectorAll('.owl-prev');
 owlPrev.forEach(element => {
   element.innerHTML = "<i class='fas fa-chevron-left'></i>";
@@ -100,3 +102,23 @@ let owlNext = document.querySelectorAll('.owl-next');
 owlNext.forEach(element => {
   element.innerHTML = "<i class='fas fa-chevron-right'></i>";
 });
+
+// Timer Implementation on Home page
+
+let countDown = new Date("Jun 10, 2022 14:00:00").getTime();
+let CountingDown = setInterval(() => {
+    let now = new Date().getTime(),
+        timeRemaining = countDown - now;
+
+    let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24)),
+        hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    $("#days").text(days);
+    $("#hours").text(hours);
+    $("#mins").text(minutes);
+    $("#secs").text(seconds);
+
+}, 1000)
+
