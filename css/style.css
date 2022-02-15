@@ -5,6 +5,7 @@
     --black: #000000;
     --gray-white: #f5fdfe;
     --white: #ffffff;
+    --gray-text: #C7C7C7;
 }
 
 /* Common Styles */
@@ -1204,32 +1205,29 @@ ul .menu:hover .ico{
     margin-top: 80px;
 }
 
-.thumbnail .thumbnail-slider .item .white-background{
-    width: 70px;
+.thumbnail .thumbnail-slider .item .white-background, .shop-wel .white-background{
+    width: 50px;
     height: 360px;
     background-color: var(--white);
     opacity: 0.2;
     transform: skewX(12deg);
     position: absolute;
+    top: 0;
 }
 
 .thumbnail .thumbnail-slider .item .bg1{
-    top: 0;
     left: 9%;
 }
 
 .thumbnail .thumbnail-slider .item .bg2{
-    top: 0;
     left: 18%;
 }
 
 .thumbnail .thumbnail-slider .item .bg3{
-    top: 0;
     left: 65%;
 }
 
 .thumbnail .thumbnail-slider .item .bg4{
-    top: 0;
     left: 74%;
 }
 
@@ -1372,6 +1370,103 @@ ul .menu:hover .ico{
     word-spacing: 2.16px;
     font-weight: bold;
 }
+
+.offer{
+    background-image: url('/assets/img/Mask\ Group\ 1.png');
+    background-size: contain;
+    background-repeat: repeat;
+    
+}
+
+.offer .title .mini-title{
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--orange);
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+}
+
+.offer .title .qoute{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: capitalize;
+    line-height: 34px;
+}
+
+.offer .img-container img{
+    width: 117%;
+    position: absolute;
+    left: -80px;
+    top: -85px;
+}
+
+.offer .content .head .tit{
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.offer .content .head .list{
+    color: var(--orange);
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: capitalize
+}
+
+.offer .content .head .list i{
+    font-size: 0.65rem;
+}
+
+.offer .content .timer{
+    width: 100%;
+}
+
+.offer .content .timer .item{
+    height: 115px;
+}
+
+.offer .content .timer .time{
+    width: 75px;
+    height: 75px;
+    box-shadow: 0px 30px 80px #00000014;
+    border: 5px solid #FFFFFF;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 50% 50%;
+    display: grid;
+    place-content: center;
+    font-size: 1.35rem;
+    font-weight: bold;
+    word-spacing: -0.24px;
+}
+
+.offer .content .timer .indic{
+    font-size: 1.25rem;
+    word-spacing: -0.22px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #232E63;
+}
+
+.offer .content .shop a{
+    width: 196px;
+    height: 54px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
 
 /* ----------------------------------------------------------------------------------------- */
 
@@ -1814,6 +1909,9 @@ ul .menu:hover .ico{
     .sign-contain .floating-logo{
         width: 362px;
         height: 362px;
+    }
+    .offer .content .timer{
+        width: 80%;
     }
 }
  
