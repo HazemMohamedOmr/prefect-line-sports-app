@@ -1531,6 +1531,62 @@ ul .menu:hover .ico{
     text-transform: uppercase;
 }
 
+.blog{
+
+}
+
+.blog .item{
+    background-color: #F9F9F9;
+    border-radius: 15px;
+}
+
+.blog .item .img{
+    box-shadow: 20px 20px 40px #0000000A;
+}
+
+.blog .item .context .title a{
+    font-size: 1.05rem;
+    color: var(--black);
+    line-height: 23px;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: 0.2s all ease;
+}
+
+.blog .item .context .title a:hover{
+    color: var(--orange);
+}
+
+.blog .item .desc{
+    font-family: 'Sora';
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 17px;
+    color: #C8C8C8;
+}
+
+.blog .item .desc span:hover{
+    color: var(--orange);
+}
+
+.blog .item .desc .details{
+    font-size: 1rem;
+    line-height: 21px;
+}
+
+.blog .item .desc .more a{
+    font-family: 'Sora';
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 17px;
+    color: #C8C8C8;
+    transition: all 0.2s ease;
+}
+
+.blog .item .desc .more a:hover{
+    color: var(--orange);
+}
+
 /* ----------------------------------------------------------------------------------------- */
 
 /* Shop page */
