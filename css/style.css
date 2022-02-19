@@ -1224,6 +1224,7 @@ ul .menu:hover .ico{
 
 .thumbnail .thumbnail-slider .item .bg2{
     left: 18%;
+    visibility: hidden;
 }
 
 .thumbnail .thumbnail-slider .item .bg3{
@@ -1232,6 +1233,7 @@ ul .menu:hover .ico{
 
 .thumbnail .thumbnail-slider .item .bg4{
     left: 74%;
+    visibility: hidden;
 }
 
 .thumbnail .thumbnail-slider .item .content{
@@ -1239,7 +1241,7 @@ ul .menu:hover .ico{
     text-transform: uppercase;
     font-weight: bold;
     padding-top: 16%;
-    padding-left: 10%;
+    padding-left: 0;
 }
 
 .thumbnail .thumbnail-slider .item .content .mini-title{
@@ -1287,7 +1289,7 @@ ul .menu:hover .ico{
 .thumbnail .thumbnail-slider img{
     width: auto;
     position: relative;
-    top: -60px;
+    top: -61px;
 }
 
 .thumbnail .thumbnail-slider .owl-dots{
@@ -2223,17 +2225,44 @@ ul .menu:hover .ico{
     .owl-nav{
         display: none;
     }
+    .thumbnail .thumbnail-slider .item .bg1{
+        left: 17%;
+    }
+
+    .thumbnail .thumbnail-slider .item .bg2{
+        left: 22%;
+    }
+    
+    .thumbnail .thumbnail-slider .item .bg4{
+        left: 78%;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
- 
+    .thumbnail .thumbnail-slider .item .bg2{
+        left: 22%;
+        visibility: visible;
+    }
+    
+    .thumbnail .thumbnail-slider .item .bg4{
+        left: 78%;
+        visibility: visible;
+    }
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
     .sign-contain .sign-form form{
         width: 73%;
+    }
+
+    .thumbnail .thumbnail-slider .item .bg2{
+        left: 18%;
+    }
+    
+    .thumbnail .thumbnail-slider .item .bg4{
+        left: 74%;
     }
 }
  
@@ -2258,6 +2287,10 @@ ul .menu:hover .ico{
 
     .contact-form .submit button{
         width: 50%;
+    }
+
+    .thumbnail .thumbnail-slider .item .content{
+        padding-left: 10%;
     }
 }
  
