@@ -2037,7 +2037,85 @@ ul .menu:hover .ico{
     background-color: #f5fdfe;
     border-radius: 6px;
     margin: 10px;
-    height: 200px;
+}
+
+.checkout .cart .content .item .prod-info .prod-name{
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--black);
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.checkout .cart .content .item .quantity .number{
+    background-color: #EFEFEFFC;
+    border-radius: 5px;
+}
+
+.checkout .cart .content .item .quantity .number span{
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.checkout .cart .content .item .quantity .number button{
+    font-size: 0.75rem;
+    font-weight: 800;
+    border: none;
+    height: 100%;
+    background-color: transparent;
+    transition: 0.1s all ease;
+}
+
+.checkout .cart .content .item .quantity .number button:hover{
+    background-color: #bfbfbf;
+}
+
+.checkout .cart .content .item .quantity .price{
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--black);
+    line-height: 19px;
+}
+
+.checkout .cart .content .item .icons i{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--black);
+    line-height: 19px;
+    transition: 0.1s all ease;
+}
+
+.checkout .cart .content .item .icons i:hover{
+    color: var(--orange);
+}
+
+.checkout .cart .content .item .icons .faved{
+    color: var(--orange);
+}
+
+.checkout .cart .content .item .info .tit{
+    font-size: 0.8rem;
+    color: #C2C2C2;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: capitalize;
+}
+
+.checkout .cart .content .item .info .color{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--black);
+    border-radius: 4px;
+}
+
+.checkout .cart .content .item .info .color-name{
+    font-size: 0.75rem;
+    color: var(--black);
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: capitalize;
 }
 
 .checkout .check{

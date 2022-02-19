@@ -122,3 +122,38 @@ let CountingDown = setInterval(() => {
 
 }, 1000)
 
+// cart item count 
+
+    // Increment Product
+document.querySelectorAll(".prod-plus").forEach(element => {
+  console.log(element);
+  element.addEventListener("click", ()=>{
+    let item = element.previousElementSibling.firstElementChild.getAttribute("value");
+
+    if(item >= 1){
+      item++;
+      element.previousElementSibling.firstElementChild.setAttribute("value", item);
+      element.previousElementSibling.previousElementSibling.innerHTML= item;
+
+      let price = 125;
+      element.parentElement.nextElementSibling.firstElementChild.innerHTML =  price * item;
+    } 
+  })
+});
+
+    // Decrement Product
+document.querySelectorAll(".prod-minus").forEach(element => {
+  console.log(element);
+  element.addEventListener("click", ()=>{
+    let item = element.nextElementSibling.nextElementSibling.firstElementChild.getAttribute("value");
+
+    if(item > 1){
+      item--;
+      element.nextElementSibling.nextElementSibling.firstElementChild.setAttribute("value", item);
+      element.nextElementSibling.innerHTML= item;
+
+      let price = 125;
+      element.parentElement.nextElementSibling.firstElementChild.innerHTML =  price * item;
+    } 
+  })
+});
