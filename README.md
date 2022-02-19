@@ -15,5 +15,5 @@
 
 - Slider `OwlCarousel2-2.3.4`
 - Bootstrap `Bootstrap 5`
-- FontAwesome `FontAwesome 6`
+- FontAwesome `FontAwesome 5.15.4`
 - JQuery `jquery `
