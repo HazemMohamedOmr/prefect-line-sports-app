@@ -17,3 +17,4 @@
 - Bootstrap `Bootstrap 5`
 - FontAwesome `FontAwesome 5.15.4`
 - JQuery `jquery `
+- Select2 `Select2 4.0.13`
