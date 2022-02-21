@@ -92,6 +92,93 @@ $('.thumbnail-slider').owlCarousel({
   autoplayHoverPause:true,
 })
 
+$('.e-1-slider').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  }
+})
+
+$('.e-m-slider-27').owlCarousel({
+  items: 2,
+  center: true,
+  loop: true,
+  margin: 46,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 2
+    }
+  }
+})
+
+$('.e-m-slider-25-1').owlCarousel({
+  items: 3,
+  center: true,
+  loop: true,
+  margin: 10,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 4
+    }
+  }
+})
+
+$('.e-m-slider-25-3').owlCarousel({
+  items: 3,
+  center: true,
+  loop: true,
+  margin: 10,
+  dots:false,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 4
+    }
+  }
+})
+
 // Adjusting Owl nav elements
 let owlPrev = document.querySelectorAll('.owl-prev');
 owlPrev.forEach(element => {
@@ -122,3 +209,48 @@ let CountingDown = setInterval(() => {
 
 }, 1000)
 
+// cart item count 
+
+    // Increment Product
+document.querySelectorAll(".prod-plus").forEach(element => {
+  element.addEventListener("click", ()=>{
+    let item = element.previousElementSibling.firstElementChild.getAttribute("value");
+
+    if(item >= 1){
+      item++;
+      element.previousElementSibling.firstElementChild.setAttribute("value", item);
+      element.previousElementSibling.previousElementSibling.innerHTML= item;
+
+      let price = 125;
+      element.parentElement.nextElementSibling.firstElementChild.innerHTML =  price * item;
+    } 
+  })
+});
+
+    // Decrement Product
+document.querySelectorAll(".prod-minus").forEach(element => {
+  element.addEventListener("click", ()=>{
+    let item = element.nextElementSibling.nextElementSibling.firstElementChild.getAttribute("value");
+
+    if(item > 1){
+      item--;
+      element.nextElementSibling.nextElementSibling.firstElementChild.setAttribute("value", item);
+      element.nextElementSibling.innerHTML= item;
+
+      let price = 125;
+      element.parentElement.nextElementSibling.firstElementChild.innerHTML =  price * item;
+    } 
+  })
+});
+
+    // Bad Section toggle select
+let badButtons = document.querySelectorAll(".bad-section .toggle");
+badButtons.forEach(element =>{
+  console.log(element);
+  element.addEventListener("click", (e)=>{
+    badButtons.forEach(ele =>{
+      ele.classList.remove("bg-orange");
+    })
+    e.target.classList.add("bg-orange");
+  })
+})
