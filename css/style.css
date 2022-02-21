@@ -22,11 +22,15 @@ html, body{
     font-family: 'Montserrat', sans-serif !important;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .orange{
     color: var(--orange) !important;
 }
 .bg-orange{
-    background-color: var(--orange);
+    background-color: var(--orange) !important;
 }
 
 .gray{
@@ -3072,7 +3076,9 @@ ul .menu:hover .ico{
 
 .bad-section .bad-section-ever .bad-section-header div{
     display: inline-flex;
-    margin: 0;
+}
+
+.bad-section .bad-section-ever .pad div{
     padding: 0;
 }
 
@@ -3182,11 +3188,9 @@ ul .menu:hover .ico{
     content: "\2022";
     color: var(--orange);
     font-weight: bold;
-    font-size: 40px;
-    display: inline-block;
-    width: 9px;
-    height: 9px;
+    font-size: 41px;
     margin-right: 10px;
+    transform: translateY(-5%);
 }
 
 .coach-job .card ul li {
@@ -3866,4 +3870,34 @@ text-transform: uppercase;
     font-weight: bold;
     text-transform: capitalize;
     color:  var(--gray-text);
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 576px){
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .careers-job .row :nth-child(2){
+        order: 1;
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .careers-job .row :nth-child(2){
+        order: 0;
+    }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
 }

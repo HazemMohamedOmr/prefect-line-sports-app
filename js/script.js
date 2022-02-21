@@ -148,7 +148,7 @@ $('.e-m-slider-25-1').owlCarousel({
       items: 1
     },
     600: {
-      items: 1
+      items: 3
     },
     1000: {
       items: 4
@@ -171,7 +171,7 @@ $('.e-m-slider-25-3').owlCarousel({
       items: 1
     },
     600: {
-      items: 1
+      items: 3
     },
     1000: {
       items: 4
@@ -213,7 +213,6 @@ let CountingDown = setInterval(() => {
 
     // Increment Product
 document.querySelectorAll(".prod-plus").forEach(element => {
-  console.log(element);
   element.addEventListener("click", ()=>{
     let item = element.previousElementSibling.firstElementChild.getAttribute("value");
 
@@ -230,7 +229,6 @@ document.querySelectorAll(".prod-plus").forEach(element => {
 
     // Decrement Product
 document.querySelectorAll(".prod-minus").forEach(element => {
-  console.log(element);
   element.addEventListener("click", ()=>{
     let item = element.nextElementSibling.nextElementSibling.firstElementChild.getAttribute("value");
 
@@ -244,3 +242,15 @@ document.querySelectorAll(".prod-minus").forEach(element => {
     } 
   })
 });
+
+    // Bad Section toggle select
+let badButtons = document.querySelectorAll(".bad-section .toggle");
+badButtons.forEach(element =>{
+  console.log(element);
+  element.addEventListener("click", (e)=>{
+    badButtons.forEach(ele =>{
+      ele.classList.remove("bg-orange");
+    })
+    e.target.classList.add("bg-orange");
+  })
+})
