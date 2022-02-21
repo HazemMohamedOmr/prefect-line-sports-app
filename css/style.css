@@ -2514,6 +2514,129 @@ ul .menu:hover .ico{
 
 /* ----------------------------------------------------------------------------------------- */
 
+/* Join us Page */
+
+.join .head .mini-title h3{
+    font-size: 0.85rem;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+.join .head .title h2{
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 34px;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.join .head .info p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9B9B9B;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.join .join-form .form-floating input,
+.join .join-form .form-floating textarea,
+.join .join-form .form-floating select{
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    box-shadow: 10px 10px 20px #0000000A;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.join .join-form .form-floating textarea{
+    resize: none;
+    height: 216px;
+    box-shadow: 20px 20px 30px #00000012;
+}
+
+.join .join-form .form-floating select{
+    cursor: pointer;
+    color: #BFBFBF;
+    font-weight: 600;
+}
+
+.join .join-form .form-floating option{
+    color: black;
+}
+
+.join .join-form .form-check .cont{
+    display: flex;
+    align-items: center;
+}
+
+.join .join-form .form-check input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    border: 1px solid var(--orange);
+    border-radius: 3px;
+  
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease;
+}
+
+.join .join-form .form-check input[type="checkbox"]:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.42);
+}
+  
+.join .join-form .form-check input[type="checkbox"]:checked {
+    background-color: var(--orange);
+    border: none;
+}
+
+.join .join-form .form-check .input-name{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.join .join-form .form-floating label{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #BFBFBF;
+    padding: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.join .join-form .submit button{
+    width: 350px;
+    height: 56px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--orange);
+    box-shadow: 20px 20px 30px #FF8A001A;
+    border-radius: 5px;
+}
+
+.join .join-form input:focus{
+    background-color: #FEEDDA;
+}
+
+.join .join-form input:focus ~ label{
+    color: var(--black);
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
 /* Media Query */
 
 @media only screen and (max-width: 576px){
