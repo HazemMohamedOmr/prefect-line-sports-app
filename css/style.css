@@ -18,7 +18,7 @@ html, body{
 }
 
 .orange{
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 .bg-orange{
     background-color: var(--orange);
@@ -2543,6 +2543,10 @@ ul .menu:hover .ico{
     .thumbnail .thumbnail-slider .item .bg4{
         left: 78%;
         visibility: visible;
+    }
+
+    .pay .img img{
+        width: auto !important;
     }
 }
  
