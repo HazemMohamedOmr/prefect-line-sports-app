@@ -177,7 +177,21 @@ $('.e-m-slider-25-3').owlCarousel({
       items: 4
     }
   }
-})
+});
+
+// Running Select2 on input select
+
+($(document).ready(function() {
+  $('.js-example-basic-single').select2({
+    width: '100%',
+  });
+
+  // Adjusting Select2 ico
+  let selIco = document.querySelectorAll('.select2-selection__arrow');
+  selIco.forEach(element => {
+    element.innerHTML = "<i class='fas fa-angle-down'></i>";
+  });
+}));
 
 // Adjusting Owl nav elements
 let owlPrev = document.querySelectorAll('.owl-prev');
@@ -189,6 +203,8 @@ let owlNext = document.querySelectorAll('.owl-next');
 owlNext.forEach(element => {
   element.innerHTML = "<i class='fas fa-chevron-right'></i>";
 });
+
+
 
 // Timer Implementation on Home page
 
@@ -207,7 +223,7 @@ let CountingDown = setInterval(() => {
     $("#mins").text(minutes);
     $("#secs").text(seconds);
 
-}, 1000)
+}, 1000);
 
 // cart item count 
 
