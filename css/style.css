@@ -2937,6 +2937,41 @@ ul .menu:hover .ico{
     display: none;
 }
 
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px dashed #707070;
+    box-shadow: 10px 10px 20px #0000000A;
+    border-radius: 5px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #BFBFBF;
+    padding: 1rem;
+    width: 100%;
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.inputfile-3:focus + label,
+.inputfile-3.has-focus + label,
+.inputfile-3 + label:hover {
+    color: #58524b;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
 /* Media Query */
 
 @media only screen and (max-width: 576px){
