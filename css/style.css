@@ -489,12 +489,6 @@ ul .menu:hover .ico{
 
         /* UpperFooter */
 
-.upper-footer .contact{
-    /* display: grid;
-    grid-template-columns: 2fr 3fr 2fr; */
-    /* column-gap: 0.75rem; */
-}
-
 .upper-footer .contact .ele{
     height: 180px;
     border-radius: 16px;
@@ -916,10 +910,6 @@ ul .menu:hover .ico{
     height: auto;
     display: grid;
     place-content: center;
-}
-
-.products .product-slider .item{
-    
 }
 
 .products .product-slider .item .preview{
@@ -1540,10 +1530,6 @@ ul .menu:hover .ico{
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-}
-
-.blog{
-
 }
 
 .blog .item{
@@ -3959,10 +3945,6 @@ ul .menu:hover .ico{
     background-position: center;
     background-size:contain;
     background-position: bottom;
-}
-
-.t-f-title-26{
-
 }
 
 .t-f-title-26 h3{
