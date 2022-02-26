@@ -2622,11 +2622,13 @@ ul .menu:hover .ico{
     border-radius: 5px;
 }
 
-.join .join-form input:focus{
+.join .join-form input:focus,
+.join .join-form textarea:focus{
     background-color: #FEEDDA;
 }
 
-.join .join-form input:focus ~ label{
+.join .join-form input:focus ~ label,
+.join .join-form textarea:focus ~ label{
     color: var(--black);
 }
 
@@ -2937,6 +2939,7 @@ ul .menu:hover .ico{
     font-weight: 600;
     border: 1px dashed #707070;
     box-shadow: 10px 10px 20px #0000000A;
+    background-color: var(--white);
     border-radius: 5px;
     line-height: 19px;
     text-transform: capitalize;
@@ -2975,6 +2978,10 @@ ul .menu:hover .ico{
     .thumbnail .thumbnail-slider .item .bg4{
         left: 78%;
     }
+    
+    .form-floating > .text-res:focus{
+        padding-top: 3.625rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -2991,6 +2998,10 @@ ul .menu:hover .ico{
 
     .pay .img img{
         width: auto !important;
+    }
+
+    .form-floating > .text-res:focus{
+        padding-top: 3.625rem;
     }
 }
  
@@ -3016,6 +3027,10 @@ ul .menu:hover .ico{
     .request .req .steps .fix4 h3{
         top: -27px;
         left: 14px;
+    }
+
+    .form-floating > .text-res:focus{
+        padding-top: 2.625rem;
     }
 }
  
@@ -3054,12 +3069,20 @@ ul .menu:hover .ico{
         top: -27px;
         left: 14px;
     }
+    
+    .form-floating > .text-res:focus{
+        padding-top: 2.625rem;
+    }
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
     .thumb .content{
         width: 55%;
+    }
+
+    .form-floating > .text-res:focus{
+        padding-top: 1.625rem;
     }
 }
 
@@ -3271,6 +3294,16 @@ ul .menu:hover .ico{
     cursor: pointer;
     color: #BFBFBF;
     font-weight: 600;
+}
+
+.contact-form .form-floating input:focus,
+.contact-form .form-floating textarea:focus{
+    background-color: #FEEDDA;
+}
+
+.contact-form .form-floating input:focus ~ label,
+.contact-form .form-floating textarea:focus ~ label{
+    color: var(--black);
 }
 
 .contact-form .form-floating option {
