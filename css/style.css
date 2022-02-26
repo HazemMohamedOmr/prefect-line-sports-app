@@ -2646,6 +2646,232 @@ ul .menu:hover .ico{
 
 /* ----------------------------------------------------------------------------------------- */
 
+.request .head .title h2{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--black);
+    line-height: 34px;
+    text-transform: capitalize;
+}
+
+.request .head .mini-title h3{
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--orange);
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.request .req .steps{
+    display: grid;
+    grid-template-columns: 1fr 45px 1fr 45px 1fr;
+    align-items: center;
+    column-gap: 0px;
+}
+
+.request .req .steps .progress1 .line{
+    width: 100%;
+    border: 4px solid #D1D1D1;
+    border-radius: 10px 0 0 10px;
+}
+
+.request .req .steps .progress1 h3{
+    font-size: 0.85rem;
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #D1D1D1;
+    position: absolute;
+    top: -42px;
+    left: 9px;
+}
+
+.request .req .steps .progress1 .end{
+    width: 100%;
+    border: 4px solid #D1D1D1;
+    border-radius: 10px;
+}
+
+.request .req .steps .check{
+    width: 47px;
+    height: 47px;
+    background-color: var(--white);
+    border: 12px solid #D1D1D1;
+    border-radius: 50% 50%;
+}
+
+.request .req .steps .check i{
+    color: #D1D1D1;
+}
+
+.request .req .steps .done .line{
+    border: 4px solid var(--orange);
+}
+
+.request .req .steps .done h3{
+    color: var(--orange);
+}
+
+.request .req .steps .done .end{
+    border: 4px solid var(--orange);
+}
+
+.request .req .steps .check-done{
+    border: 12px solid var(--orange);
+    position: relative;
+    z-index: 2;
+}
+
+.request .req .steps .check-done i{
+    color: var(--orange);
+}
+
+.request .content{
+    box-shadow: 0px 0px 60px #00000012;
+    border-radius: 15px;
+}
+
+.request .join-form .form-floating input,
+.request .join-form .form-floating textarea,
+.request .join-form .form-floating select{
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    box-shadow: 10px 10px 20px #0000000A;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.request .join-form .form-floating textarea{
+    resize: none;
+    height: 216px;
+    box-shadow: 20px 20px 30px #00000012;
+}
+
+.request .join-form .form-floating select{
+    cursor: pointer;
+    color: #BFBFBF;
+    font-weight: 600;
+}
+
+.request .join-form .form-floating option{
+    color: black;
+}
+
+.request .join-form .form-check .cont{
+    display: flex;
+    align-items: center;
+}
+
+.request .join-form .form-check input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    border: 1px solid var(--orange);
+    border-radius: 3px;
+  
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease;
+}
+
+.request .join-form .form-check input[type="checkbox"]:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.42);
+}
+  
+.request .join-form .form-check input[type="checkbox"]:checked {
+    background-color: var(--orange);
+    border: none;
+}
+
+.request .join-form .form-check .input-name{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.request .join-form .form-floating label{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #BFBFBF;
+    padding: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.request .join-form .submit button{
+    width: 350px;
+    height: 56px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--orange);
+    box-shadow: 20px 20px 30px #FF8A001A;
+    border-radius: 5px;
+}
+
+.request .join-form input:focus{
+    background-color: #FEEDDA;
+}
+
+.request .join-form input:focus ~ label{
+    color: var(--black);
+}
+
+.request .join-form .title h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 34px;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.request .join-form .title h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 34px;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.request .join-form .method input[type=radio]:checked {
+    background-color: var(--gray);
+    border-color: var(--gray);
+    border: 5px;
+}
+
+.request .join-form .method input[type=radio]:checked {
+    background-color: var(--orange);
+    border: none;
+}
+
+.request .join-form .method input[type=radio]:focus {
+    box-shadow: 0 0 0 .25rem rgb(255, 138, 0, 0.4)
+}
+
+.request .join-form .method label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #A1A1A1;
+    line-height: 19px;
+    text-transform: capitalize;
+}
+
+.request .join-form .method input[type=radio]:checked ~ label {
+    color: #FF8A00;
+}
+
+.select2-search--dropdown{
+    display: none !important;
+}
 /* Media Query */
 
 @media only screen and (max-width: 576px){
@@ -2695,6 +2921,16 @@ ul .menu:hover .ico{
     .thumbnail .thumbnail-slider .item .bg4{
         left: 74%;
     }
+
+    .request .req .steps .fix1 h3{
+        top: -27px;
+        left: 4px;
+    }
+
+    .request .req .steps .fix4 h3{
+        top: -27px;
+        left: 14px;
+    }
 }
  
 /* Large devices (desktops, 992px and up) */
@@ -2726,6 +2962,11 @@ ul .menu:hover .ico{
 
     .shipping-policies .ship-sec{
         width: 75%;
+    }
+
+    .request .req .steps .progress1 h3{
+        top: -27px;
+        left: 14px;
     }
 }
  
