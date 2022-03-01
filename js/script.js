@@ -262,7 +262,6 @@ document.querySelectorAll(".prod-minus").forEach(element => {
     // Bad Section toggle select
 let badButtons = document.querySelectorAll(".bad-section .toggle");
 badButtons.forEach(element =>{
-  console.log(element);
   element.addEventListener("click", (e)=>{
     badButtons.forEach(ele =>{
       ele.classList.remove("bg-orange");
@@ -298,3 +297,35 @@ badButtons.forEach(element =>{
 		input.addEventListener('blur', function(){input.classList.remove('has-focus'); });
 	});
 }(document, window, 0));
+
+// partners section
+
+let row = document.querySelector(".part .row");
+let floatImg = document.querySelector(".part .flot-img");
+let trigger = document.querySelector(".part .more");
+
+console.log(row.clientHeight);
+if(row.clientHeight < 630){
+  row.classList.remove("edged");
+  floatImg.classList.add("d-none");
+  trigger.classList.add("d-none");
+}else if (row.clientHeight >= 630){
+  row.classList.add("edged");
+  var show = 1;
+}
+
+trigger.addEventListener("click", ()=>{
+  row.classList.toggle("edged");
+  floatImg.classList.toggle("d-none");
+  if(show){
+    trigger.innerText = "show less";
+    show = 0;
+  }else if(!show){
+    trigger.innerText = "show more";
+    show = 1
+  }
+});
+
+console.log(row);
+console.log(floatImg);
+console.log(trigger);

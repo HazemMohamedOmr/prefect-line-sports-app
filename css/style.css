@@ -106,6 +106,108 @@ ul{
 
 /* common sections */
 
+    /* select input */
+
+.sel .select2-container{
+    position: relative;
+}
+
+.sel .selection .select2-selection{
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    box-shadow: 10px 10px 20px #0000000A;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+}
+
+.sel .selection .select2-selection__rendered{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19px !important;
+    text-transform: capitalize;
+    color: #BFBFBF !important;
+    transition: all 0.1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem !important;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+}
+
+.sel .selection .select2-selection__arrow{
+    top: 50% !important;
+    right: 4px !important;
+    transform: translateY(-50%);
+}
+
+.sel .selection .select2-selection__arrow b{
+    display: none;
+}
+
+.select2-dropdown{
+    border: none !important;
+    box-shadow: 5px 22px 20px #0000000A;
+}
+
+.select2-dropdown .select2-results__option{
+    padding: 10px 14px;
+}
+
+.select2-dropdown .select2-results ul{
+    border-radius: 3px;
+}
+
+.select2-dropdown .select2-results__option--highlighted[aria-selected]{
+    background-color: var(--orange) !important;
+}
+
+.select2-dropdown .select2-results__options li:nth-child(1){
+    display: none;
+}
+
+    /* file input */
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px dashed #707070;
+    box-shadow: 10px 10px 20px #0000000A;
+    background-color: var(--white);
+    border-radius: 5px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #BFBFBF;
+    padding: 1rem;
+    width: 100%;
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.inputfile-3:focus + label,
+.inputfile-3.has-focus + label,
+.inputfile-3 + label:hover {
+    color: #58524b;
+}
+
     /* sign */
 
 .sign-wel{
@@ -245,7 +347,7 @@ ul{
     width: 195px;
 }
 
-    /* partners */
+    /* partners section */
 
 .partner .title{
     text-align: center;
@@ -2861,102 +2963,178 @@ ul .menu:hover .ico{
     display: none !important;
 }
 
-.sel .select2-container{
-    position: relative;
-}
+/* ----------------------------------------------------------------------------------------- */
 
-.sel .selection .select2-selection{
-    font-size: 1rem;
-    font-weight: 500;
-    border: none;
-    box-shadow: 10px 10px 20px #0000000A;
-    border-radius: 5px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: calc(3.5rem + 2px);
-    line-height: 1.25;
-}
+/* about us page */
 
-.sel .selection .select2-selection__rendered{
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 19px !important;
-    text-transform: capitalize;
-    color: #BFBFBF !important;
-    transition: all 0.1s ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding: 1rem !important;
-    pointer-events: none;
-    border: 1px solid transparent;
-    transform-origin: 0 0;
-}
-
-.sel .selection .select2-selection__arrow{
-    top: 50% !important;
-    right: 4px !important;
-    transform: translateY(-50%);
-}
-
-.sel .selection .select2-selection__arrow b{
-    display: none;
-}
-
-.select2-dropdown{
-    border: none !important;
-    box-shadow: 5px 22px 20px #0000000A;
-}
-
-.select2-dropdown .select2-results__option{
-    padding: 10px 14px;
-}
-
-.select2-dropdown .select2-results ul{
-    border-radius: 3px;
-}
-
-.select2-dropdown .select2-results__option--highlighted[aria-selected]{
-    background-color: var(--orange) !important;
-}
-
-.select2-dropdown .select2-results__options li:nth-child(1){
-    display: none;
-}
-
-.inputfile {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
-
-.inputfile + label {
-    font-size: 1rem;
-    font-weight: 600;
-    border: 1px dashed #707070;
-    box-shadow: 10px 10px 20px #0000000A;
+.about{
+    background-image: url(../assets/img/Mask\ Group\ 1.png);
     background-color: var(--white);
-    border-radius: 5px;
-    line-height: 19px;
+    background-size: contain;
+}
+
+.about .head .mini-title h3{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--orange);
+    letter-spacing: 3.9px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.about .head .title h2{
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--black);
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.about .content p{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #C7C7C7;
+    line-height: 22px;
     text-transform: capitalize;
-    color: #BFBFBF;
-    padding: 1rem;
+}
+
+.about .more a{
+    width: 196px;
+    height: 54px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .floating-logo{
+    width: 243px;
+    height: 243px;
+    background-color: var(--orange);
+    box-shadow: 0px 30px 80px #00000014;
+    border: 25px solid #FFFFFF;
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .floating-logo img{
+    width: 134px;
+}
+
+.follow-us .head .mini-title h3{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--orange);
+    letter-spacing: 3.9px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.follow-us .head .title h2{
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--black);
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.follow-us .content{
     width: 100%;
-    height: calc(3.5rem + 2px);
-    line-height: 1.25;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
+}
+
+.follow-us .content a{
+    font-size: 1.8rem;
+    color: var(--orange);
+    transition: 0.2s all ease-in-out;
 }
 
 
-.inputfile-3:focus + label,
-.inputfile-3.has-focus + label,
-.inputfile-3 + label:hover {
-    color: #58524b;
+.follow-us .content i{
+    transition: 0.2s transform ease-in-out;
+}
+
+.follow-us .content a:hover i{
+    transform: scale(1.2, 1.2);
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* Partners page */
+
+.part{
+
+}
+
+.part .head .mini-title h3{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--orange);
+    letter-spacing: 1.4px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.part .head .title h2{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--black);
+    line-height: 34px;
+    text-transform: capitalize;
+}
+
+.part .item{
+    height: 180px;
+    border-radius: 15px;
+    background-color: #EFEFEF;
+    display: grid;
+    place-content: center;
+    transition: 0.2s all ease;
+}
+
+.part .item img{
+    transition: 0.2s transform ease;
+}
+
+.part .item:hover{
+    box-shadow: -15px -15px 30px #00000012;
+    background-color: var(--white);
+}
+
+.part .item:hover img{
+    transform: scale(1.1, 1.1);
+}
+
+.part .more{
+    width: 196px;
+    height: 54px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.part .edged{
+    height: calc(180px * 3.5);
+}
+
+.part .flot-img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 /* ----------------------------------------------------------------------------------------- */
@@ -3072,6 +3250,19 @@ ul .menu:hover .ico{
     
     .form-floating > .text-res:focus{
         padding-top: 2.625rem;
+    }
+
+    .about .floating-logo{
+        width: 362px;
+        height: 362px;
+    }
+    
+    .about .floating-logo img{
+        width: 195px;
+    }
+
+    .follow-us .content{
+        width: 85%;
     }
 }
  
@@ -3582,6 +3773,11 @@ ul .menu:hover .ico{
     color: var(--orange);
     text-transform: capitalize;
     font-weight: bold;
+    width: 25%;
+}
+
+.coach-job .card .skills-body .skills-body-rate {
+    width: 18%;
 }
 
 .coach-job .card .skills-body .dot-group .dot {
