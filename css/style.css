@@ -3068,10 +3068,6 @@ ul .menu:hover .ico{
 
 /* Partners page */
 
-.part{
-
-}
-
 .part .head .mini-title h3{
     font-size: 0.8rem;
     font-weight: bold;
@@ -3139,6 +3135,76 @@ ul .menu:hover .ico{
 
 /* ----------------------------------------------------------------------------------------- */
 
+/* partners details */
+
+.ellpise{
+    width: 215px;
+    height: 215px;
+    box-shadow: 0px 30px 80px #00000014;
+    border: 10px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: var(--orange);
+}
+
+.part-details{
+    background-image: url(../assets/img/Mask\ Group\ 1.png);
+    background-color: var(--white);
+    background-size: contain;
+}
+
+.part-details .head .mini-title h3{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--orange);
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.part-details .head .title h2{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--black);
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.part-details .content p{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #C7C7C7;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
+.part-details .more a{
+    width: 196px;
+    height: 54px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part-details .content .list{
+    color: var(--black);
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: capitalize
+}
+
+.part-details .content .list i{
+    color: var(--orange);
+    font-size: 0.65rem;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
 /* Media Query */
 
 @media only screen and (max-width: 576px){
@@ -3160,6 +3226,10 @@ ul .menu:hover .ico{
     .form-floating > .text-res:focus{
         padding-top: 3.625rem;
     }
+
+    .gal-13 .fix{
+        order: 1;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -3180,6 +3250,10 @@ ul .menu:hover .ico{
 
     .form-floating > .text-res:focus{
         padding-top: 3.625rem;
+    }
+
+    .gal-13 .fix{
+        order: 1;
     }
 }
  
@@ -3209,6 +3283,10 @@ ul .menu:hover .ico{
 
     .form-floating > .text-res:focus{
         padding-top: 2.625rem;
+    }
+
+    .gal-13 .fix{
+        order: 0;
     }
 }
  
