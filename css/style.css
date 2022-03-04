@@ -3227,8 +3227,8 @@ ul .menu:hover .ico{
         padding-top: 3.625rem;
     }
 
-    .gal-13 .fix{
-        order: 1;
+    .gal-13 .gal-13-cont:nth-child(2n) .gal-13-body{
+        order: 1 !important;
     }
 }
 
@@ -3252,8 +3252,8 @@ ul .menu:hover .ico{
         padding-top: 3.625rem;
     }
 
-    .gal-13 .fix{
-        order: 1;
+    .gal-13 .gal-13-cont:nth-child(2n) .gal-13-body{
+        order: 1 !important;
     }
 }
  
@@ -3285,8 +3285,8 @@ ul .menu:hover .ico{
         padding-top: 2.625rem;
     }
 
-    .gal-13 .fix{
-        order: 0;
+    .gal-13 .gal-13-cont:nth-child(2n) .gal-13-body{
+        order: -1 !important;
     }
 }
  
