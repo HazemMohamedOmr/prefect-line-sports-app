@@ -271,14 +271,14 @@
             <div class="check d-flex justify-content-center align-items-center check-done">
               <i class="fas fa-check"></i>
             </div>
-            <div class="progress1 position-relative fix1 fix2 fix3">
+            <div class="progress1 position-relative fix1 fix2 fix3" id="step2">
               <div class="line"></div>
               <h3>Basic Product Information</h3>
             </div>
-            <div class="check d-flex justify-content-center align-items-center">
+            <div class="check d-flex justify-content-center align-items-center" id="step2-check">
               <i class="fas fa-check"></i>
             </div>
-            <div class="progress1 position-relative fix4">
+            <div class="progress1 position-relative fix4" id="step3">
               <div class="line end"></div>
               <h3>Shipping Payments</h3>
             </div>
@@ -286,54 +286,314 @@
 
           <div class="content my-5 py-5 px-3">
             <div class="join-form">
-              <form method="" action="" class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" name="" id="floatingName" placeholder="First Name">
-                        <label for="floatingName">First Name</label>
+              <form method="" action="">
+                <div class="row" id="request1">
+                
+                  <div class="col-md-6 col-lg-4">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" name="" id="floatingName" placeholder="First Name">
+                          <label for="floatingName">First Name</label>
+                      </div>
+                  </div>
+    
+                  <div class="col-md-6 col-lg-4">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" name="" id="floatingName" placeholder="Last Name">
+                          <label for="floatingName">Last Name</label>
+                      </div>
+                  </div>
+    
+                  <div class="col-md-6 col-lg-4">
+                    <div class="sel">
+                      <select class="js-example-basic-single" name="state">
+                        <option selected disabled>Country</option>
+                        <option value="AL">Option1</option>
+                        <option value="WY">Option2</option>
+                      </select>
                     </div>
-                </div>
-  
-                <div class="col-md-6 col-lg-4">
+                  </div>
+                  <div class="col-md-6 col-lg-4">
                     <div class="form-floating">
-                        <input type="text" class="form-control" name="" id="floatingName" placeholder="Last Name">
-                        <label for="floatingName">Last Name</label>
+                        <input type="email" class="form-control" name="" id="floatingName" placeholder="E-Mail Address">
+                        <label for="floatingName">E-Mail Address</label>
                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="" id="floatingName" placeholder="Mobile Number">
+                        <label for="floatingName">Mobile Number</label>
+                    </div>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="box">
+                      <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
+                      <label for="file-3" class="d-flex justify-content-between align-items-center">
+                        <span>Attachments</span>
+                        <i class="fas fa-cloud-upload-alt orange"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                    <div class="submit d-flex justify-content-center align-items-center">
+                        <a class="btn d-flex justify-content-center align-items-center">Next Step</a>
+                    </div>
+                  </div>
+                  
                 </div>
-  
-                <div class="col-md-6 col-lg-4">
-                  <div class="sel">
-                    <select class="js-example-basic-single" name="state">
-                      <option selected disabled>Country</option>
-                      <option value="AL">Option1</option>
-                      <option value="WY">Option2</option>
-                    </select>
+
+                <div class="row d-none" id="request2">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="" id="floatingName" placeholder="Business Name">
+                        <label for="floatingName">Business Name</label>
+                    </div>
+                  </div>
+    
+                  <div class="col-md-6 col-lg-4">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" name="" id="floatingName" placeholder="Product Name">
+                          <label for="floatingName">Product Name</label>
+                      </div>
+                  </div>
+    
+                  <div class="col-md-6 col-lg-4">
+                    <div class="sel">
+                      <select class="js-example-basic-single" name="state">
+                        <option selected disabled>Category</option>
+                        <option value="AL">Option1</option>
+                        <option value="WY">Option2</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="sel">
+                      <select class="js-example-basic-single" name="state">
+                        <option selected disabled>Sourcing type</option>
+                        <option value="AL">Option1</option>
+                        <option value="WY">Option2</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" name="" id="floatingName" placeholder="Quantity / Pieces">
+                          <label for="floatingName">Quantity / pieces</label>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" name="" id="floatingName" placeholder="Max Budget">
+                          <label for="floatingName">Max budget</label>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="sel">
+                      <select class="js-example-basic-single" name="state">
+                        <option selected disabled>Currency</option>
+                        <option value="AL">Option1</option>
+                        <option value="WY">Option2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" name="" id="floatingName" placeholder="Details">
+                          <label for="floatingName">Details</label>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                      <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
+                      <label for="file-3" class="d-flex justify-content-between align-items-center">
+                        <span>Attachments</span>
+                        <i class="fas fa-paperclip black"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 py-4 px-5">
+                      <div class="title py-2">
+                          <h3>Sourcing Purpose</h3>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                          <label class="form-check-label d-flex align-items-center pt-1" for="gridRadios1">
+                            <span>Sports Olympic Committee</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="gridRadios2">
+                            <span>Sports Olympic Committee</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="gridRadios3">
+                            <span>Clubs</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="gridRadios4">
+                            <span>Federation</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="gridRadios5">
+                            <span>Government</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios6" value="option6">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="gridRadios6">
+                            <span>Reseller</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios7" value="option7">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="gridRadios7">
+                            <span>Distributor</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="gridRadios" id="gridRadios8" value="option8">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="gridRadios8">
+                            <span>Others</span>
+                          </label>
+                      </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                    <div class="submit d-flex justify-content-center align-items-center flex-wrap">
+                      <a class="btn d-flex justify-content-center align-items-center" id="pervious">Pervious Step</a>
+                      <a class="btn d-flex justify-content-center align-items-center mt-3 mt-lg-0 ms-lg-3" id="next">Next Step</a>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                  <div class="form-floating">
-                      <input type="email" class="form-control" name="" id="floatingName" placeholder="E-Mail Address">
-                      <label for="floatingName">E-Mail Address</label>
+
+                <div class="row d-none" id="request3">
+                  <div class="title px-5">
+                    <h2>Shipping & Payments</h2>
                   </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <div class="form-floating">
-                      <input type="text" class="form-control" name="" id="floatingName" placeholder="Mobile Number">
-                      <label for="floatingName">Mobile Number</label>
+                  <div class="col-lg-3 col-md-6 py-4 ps-5">
+                      <div class="title py-2">
+                          <h3>Shipment Method</h3>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="shipRadios" id="shipRadios1" value="option1" checked>
+                          <label class="form-check-label d-flex align-items-center pt-1" for="shipRadios1">
+                            <span>Seaport</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="shipRadios" id="shipRadios2" value="option2">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="shipRadios2">
+                            <span>Airport</span>
+                          </label>
+                      </div>
                   </div>
-                </div>
-                <div class="col-12 mb-3">
-                  <div class="box">
-                    <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
-                    <label for="file-3" class="d-flex justify-content-between align-items-center">
-                      <span>Attachments</span>
-                      <i class="fas fa-cloud-upload-alt orange"></i>
-                    </label>
+                  <div class="col-md-6 py-4 ps-5">
+                      <div class="title py-2">
+                          <h3>Preferred Shipment & Pricing Conditions</h3>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="preRadios" id="preRadios1" value="option1" checked>
+                          <label class="form-check-label d-flex align-items-center pt-1" for="preRadios1">
+                            <span>FOB</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="preRadios" id="preRadios2" value="option2">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="preRadios2">
+                            <span>CIF</span>
+                          </label>
+                      </div>
                   </div>
-                </div>
-                <div class="col-12 d-flex justify-content-center align-items-center mt-3">
-                  <div class="submit d-flex justify-content-center align-items-center">
-                      <button type="submit" class="btn">Next Step</button>
+                  <div class="col-lg-3 col-md-6 py-4 ps-5">
+                      <div class="title py-2">
+                          <h3>Source Purpose</h3>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="sourceRadios" id="sourceRadios1" value="option1" checked>
+                          <label class="form-check-label d-flex align-items-center pt-1" for="sourceRadios1">
+                            <span>Cash</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="sourceRadios" id="sourceRadios2" value="option2">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="sourceRadios2">
+                            <span>Cheque</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="sourceRadios" id="sourceRadios3" value="option2">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="sourceRadios3">
+                            <span>Bank Transfer</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="sourceRadios" id="sourceRadios4" value="option2">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="sourceRadios4">
+                            <span>Other</span>
+                          </label>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 py-4 ps-5">
+                      <div class="title py-2">
+                          <h3>Contact Information's</h3>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="contactRadios" id="contactRadios1" value="option1" checked>
+                          <label class="form-check-label d-flex align-items-center pt-1" for="contactRadios1">
+                            <span>Phone</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="contactRadios" id="contactRadios2" value="option2">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="contactRadios2">
+                            <span>E-Mail</span>
+                          </label>
+                      </div>
+                      <div class="form-check method py-1">
+                          <input class="form-check-input" form="Address-form" type="radio" name="contactRadios" id="contactRadios3" value="option2">
+                          <label class="form-check-label d-flex align-items-center pt-1" for="contactRadios3">
+                            <span>Others</span>
+                          </label>
+                      </div>
+                  </div>
+                  <div class="col-md-6 py-4 ps-5">
+                      <div class="title py-2">
+                          <h3>Time Period Of Receiving Goods (In Days)</h3>
+                      </div>
+                      <div class="form-floating mt-4">
+                          <input type="text" class="form-control" name="" id="floatingName" placeholder="Number Of Days">
+                          <label for="floatingName">Number Of Days</label>
+                      </div>
+                  </div>
+
+                  <div class="col-12 py-5 ps-5">
+                      <div class="form-check ps-0">
+                          <span class="d-flex justify-content-start align-items-center mb-2">
+                              <label for="" class="cont">
+                                <input type="checkbox" name="" id="">
+                                <span class="input-name ms-2">I Agree To Share My Business Card With Your Company.</span>
+                              </label>
+                          </span>
+                          <span class="d-flex justify-content-start align-items-center">
+                              <label for="" class="cont">
+                                <input type="checkbox" name="" id="">
+                                <span class="input-name ms-2">I Have Read, Understood And Agreed To Abide By The Buying Request Posting Rules.</span>
+                              </label>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                    <div class="submit d-flex justify-content-center align-items-center flex-wrap">
+                        <a class="btn d-flex justify-content-center align-items-center">Pervious Step</a>
+                        <button type="submit" class="btn mt-3 mt-lg-0 ms-lg-3">Submit</button>
+                    </div>
                   </div>
                 </div>
               </form>

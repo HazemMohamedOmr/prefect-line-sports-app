@@ -304,7 +304,8 @@ let row = document.querySelector(".part .row");
 let floatImg = document.querySelector(".part .flot-img");
 let trigger = document.querySelector(".part .more");
 
-console.log(row.clientHeight);
+if(row){
+
 if(row.clientHeight < 630){
   row.classList.remove("edged");
   floatImg.classList.add("d-none");
@@ -325,7 +326,55 @@ trigger.addEventListener("click", ()=>{
     show = 1
   }
 });
+  
+};
 
-console.log(row);
-console.log(floatImg);
-console.log(trigger);
+// request page
+let request = document.querySelector(".request .req");
+if(request){
+let req1 = document.querySelector("#request1");
+let req2 = document.querySelector("#request2");
+let req3 = document.querySelector("#request3");
+
+let s2 = document.querySelector("#step2");
+let s2C = document.querySelector("#step2-check");
+let s3 = document.querySelector("#step3");
+
+document.querySelector("#request1 a").addEventListener("click", ()=>{
+  req1.classList.toggle("d-none");
+  req2.classList.toggle("d-none");
+
+  s2.classList.toggle("done");
+  s2C.classList.toggle("check-done");
+
+  request.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector("#request2 #pervious").addEventListener("click", ()=>{
+  req2.classList.toggle("d-none");
+  req1.classList.toggle("d-none");
+
+  s2.classList.toggle("done");
+  s2C.classList.toggle("check-done");
+
+  request.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector("#request2 #next").addEventListener("click", ()=>{
+  req2.classList.toggle("d-none");
+  req3.classList.toggle("d-none");
+
+  s3.classList.toggle("done");
+
+  request.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector("#request3 a").addEventListener("click", ()=>{
+  req3.classList.toggle("d-none");
+  req2.classList.toggle("d-none");
+
+  s3.classList.toggle("done");
+
+  request.scrollIntoView({behavior: "smooth"});
+});
+}

@@ -2897,7 +2897,7 @@ ul .menu:hover .ico{
     transition: all 0.1s ease-in-out;
 }
 
-.request .join-form .submit button{
+.request .join-form .submit button, .request .join-form .submit a{
     width: 350px;
     height: 56px;
     font-size: 1rem;
