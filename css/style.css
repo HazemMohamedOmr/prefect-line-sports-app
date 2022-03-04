@@ -3851,12 +3851,14 @@ ul .menu:hover .ico{
     color: var(--orange);
     text-transform: capitalize;
     font-weight: bold;
-    width: 25%;
+    width: 45%;
 }
 
-.coach-job .card .skills-body .skills-body-rate {
-    width: 18%;
+.coach-job .card .skills-body .dot-group{
+    order: 1;
+    margin: 0 auto 1rem auto;
 }
+
 
 .coach-job .card .skills-body .dot-group .dot {
     height: 20px;
@@ -4517,6 +4519,19 @@ text-transform: uppercase;
 @media (min-width: 768px) {  
     .careers-job .row :nth-child(2){
         order: 1;
+    }
+
+    .coach-job .card .skills-body .skills-body-req {
+        width: 25%;
+    }
+    
+    .coach-job .card .skills-body .dot-group{
+        order: 0;
+        margin: 0;
+    }
+    
+    .coach-job .card .skills-body .skills-body-rate {
+        width: 18%;
     }
 }
  
