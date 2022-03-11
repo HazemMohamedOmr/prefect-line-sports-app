@@ -223,6 +223,8 @@ let CountingDown = setInterval(() => {
     $("#mins").text(minutes);
     $("#secs").text(seconds);
 
+    if(timeRemaining <= 1000)
+      clearInterval(CountingDown);
 }, 1000);
 
 // cart item count 
