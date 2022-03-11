@@ -3205,6 +3205,173 @@ ul .menu:hover .ico{
 
 /* ----------------------------------------------------------------------------------------- */
 
+/* sell with us page */
+
+.sell-head .content{
+    height: 330px;
+    background-image: linear-gradient(to left,#FF8A00,#ffbb01);
+}
+
+.sell-head .content-img{
+    height: 330px;
+    background-image: url("../assets/img/Mask\ Group\ 44.png");
+    position: relative;
+}
+
+.sell-head .content-img .reflect{
+    position: absolute;
+    height: 100%;
+    width: 65px;
+    background-color: #ffbb59;
+    top: 0;
+    right: 63px;
+    transform: skewX(27deg);
+}
+
+.sell-head .content-img .sell-content h2{
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.sell-head .content-img .sell-content h3{
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: 5.4px;
+}
+
+.advantage .head .title h2{
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 34px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.advantage .head .mini-title h3{
+    font-size: 1.12rem;
+    font-weight: bold;
+    line-height: 22px;
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+.advantage .item{
+    border-radius: 15px;
+    box-shadow: 20px 20px 30px #00000012;
+    background-color: var(--white);
+    transition: 0.2s all ease-in-out;
+    display: grid;
+    place-content: center;
+    height: 212px;
+}
+
+.advantage .item .content .title{
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 27px;
+    color: var(--black);
+    text-transform: capitalize;
+    transition: 0.2s all ease-in-out;
+}
+
+.advantage .item:hover{
+    box-shadow: 20px 20px 30px #FF8A001A;
+    background-color: var(--orange);
+}
+
+.advantage .item:hover .content .title{
+    color: var(--white);
+}
+
+.advantage .button a{
+    height: 54px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 1.05rem;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.8rem;
+}
+
+.sell-steps{
+    background-image: url(../assets/img/Mask\ Group\ 1.png);
+    background-color: var(--white);
+    background-size: contain;
+}
+
+.sell-steps .head .title h2{
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 34px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.sell-steps .head .mini-title h3{
+    font-size: 1.12rem;
+    font-weight: bold;
+    line-height: 22px;
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+.sell-steps .img-cont{
+    width: 333px;
+    height: 333px;
+    border-radius: 50%;
+    box-shadow: 0px 30px 80px #00000014;
+    border: 10px solid #FFFFFF;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+.sell-steps .img-cont img{
+    height: inherit;
+}
+
+.sell-steps .content .head h3{
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 34px;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.sell-steps .content .head p{
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 22px;
+    color: #9B9B9B;
+    text-transform: capitalize;
+}
+
+.sell-steps .button a{
+    height: 54px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 1.05rem;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.8rem;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
 /* Media Query */
 
 @media only screen and (max-width: 576px){
@@ -3288,6 +3455,14 @@ ul .menu:hover .ico{
     .gal-13 .gal-13-cont:nth-child(2n) .gal-13-body{
         order: -1 !important;
     }
+
+    .sell-head .content-img .reflect{
+        right: 172px;
+    }
+    
+    .sell-steps .row:nth-child(2n) .img{
+        order: 1;
+    }
 }
  
 /* Large devices (desktops, 992px and up) */
@@ -3341,6 +3516,11 @@ ul .menu:hover .ico{
 
     .follow-us .content{
         width: 85%;
+    }
+
+    .sell-steps .img-cont{
+        width: 444px;
+        height: 444px;
     }
 }
  
