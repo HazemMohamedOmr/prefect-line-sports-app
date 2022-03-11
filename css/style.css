@@ -2706,6 +2706,7 @@ ul .menu:hover .ico{
 .join .join-form .form-floating label{
     font-size: 1rem;
     font-weight: 600;
+    height: auto !important;
     line-height: 19px;
     text-transform: capitalize;
     color: #BFBFBF;

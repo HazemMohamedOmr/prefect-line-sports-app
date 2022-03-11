@@ -378,3 +378,17 @@ document.querySelector("#request3 a").addEventListener("click", ()=>{
   request.scrollIntoView({behavior: "smooth"});
 });
 }
+
+// fix text area on small devices
+let textAreas = document.querySelectorAll(".txt-areas");
+if(textAreas){
+  textAreas.forEach(ele => {
+    let labelHeight = ele.nextElementSibling.clientHeight;
+    ele.style.paddingTop = labelHeight-28 + "px";
+  })
+
+  textAreas.forEach(ele => ele.addEventListener("focus", ()=>{
+    let labelHeight = ele.nextElementSibling.clientHeight;
+    ele.style.paddingTop = labelHeight-28 + "px";
+  }))
+}
