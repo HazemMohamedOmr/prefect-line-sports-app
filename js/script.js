@@ -179,6 +179,27 @@ $('.e-m-slider-25-3').owlCarousel({
   }
 });
 
+$('.prod-carousel').owlCarousel({
+  items: 4,
+  dots:false,
+  loop: true,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 10000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 4
+    },
+    768: {
+      items: 3
+    },
+    992: {
+      items: 4
+    }
+  }
+});
+
 // Running Select2 on input select
 
 ($(document).ready(function() {
@@ -231,6 +252,7 @@ let CountingDown = setInterval(() => {
 
     // Increment Product
 document.querySelectorAll(".prod-plus").forEach(element => {
+  let price = element.parentElement.nextElementSibling.firstElementChild.innerHTML;
   element.addEventListener("click", ()=>{
     let item = element.previousElementSibling.firstElementChild.getAttribute("value");
 
@@ -239,7 +261,6 @@ document.querySelectorAll(".prod-plus").forEach(element => {
       element.previousElementSibling.firstElementChild.setAttribute("value", item);
       element.previousElementSibling.previousElementSibling.innerHTML= item;
 
-      let price = 125;
       element.parentElement.nextElementSibling.firstElementChild.innerHTML =  price * item;
     } 
   })
@@ -247,6 +268,7 @@ document.querySelectorAll(".prod-plus").forEach(element => {
 
     // Decrement Product
 document.querySelectorAll(".prod-minus").forEach(element => {
+  let price = element.parentElement.nextElementSibling.firstElementChild.innerHTML;
   element.addEventListener("click", ()=>{
     let item = element.nextElementSibling.nextElementSibling.firstElementChild.getAttribute("value");
 
@@ -255,7 +277,6 @@ document.querySelectorAll(".prod-minus").forEach(element => {
       element.nextElementSibling.nextElementSibling.firstElementChild.setAttribute("value", item);
       element.nextElementSibling.innerHTML= item;
 
-      let price = 125;
       element.parentElement.nextElementSibling.firstElementChild.innerHTML =  price * item;
     } 
   })
@@ -393,4 +414,43 @@ if(textAreas){
     let labelHeight = ele.nextElementSibling.clientHeight;
     ele.style.paddingTop = labelHeight-28 + "px";
   }))
+}
+
+/// Product PAGE
+
+// display product
+
+let prods = document.querySelectorAll(".prod-images .item");
+let currProd = document.querySelector(".prod-img img");
+
+if(prods){
+  prods.forEach(p => {
+    p.addEventListener("click", ()=>{
+      let img = p.firstElementChild.getAttribute("src");
+      currProd.setAttribute("src", img);
+    })
+  })
+}
+
+// size adjust
+
+let sizes = document.querySelectorAll(".size-form .item");
+
+if(sizes){
+  let perv = sizes[0];
+  perv.previousElementSibling.checked = true;
+  perv.firstElementChild.classList.add("bg-orange");
+  perv.firstElementChild.nextElementSibling.classList.remove("d-none")
+
+  sizes.forEach(s => {
+    s.addEventListener("click", ()=>{
+      perv.previousElementSibling.checked = false;
+      perv.firstElementChild.classList.remove("bg-orange");
+      perv.firstElementChild.nextElementSibling.classList.add("d-none")
+      perv = s
+      s.previousElementSibling.checked = true;
+      s.firstElementChild.classList.add("bg-orange");
+      s.firstElementChild.nextElementSibling.classList.remove("d-none")
+    })
+  })
 }

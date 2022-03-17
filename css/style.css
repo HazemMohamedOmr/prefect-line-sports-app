@@ -54,6 +54,10 @@ body{
     background-color: var(--gray-white);
 }
 
+.gray-black{
+    color: var(--gray-black);
+}
+
 .white{
     color: var(--white);
 }
@@ -3369,6 +3373,286 @@ ul .menu:hover .ico{
     justify-content: center;
     align-items: center;
     padding: 0 2.8rem;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* Product page */
+
+.product .prod-img{
+    background-image: url("../assets/img/Mask\ Group\ 41.png");
+    background-color: #E3F8F9;
+    background-size: cover;
+    height: 464px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .prod-img .off{
+    background-color: var(--orange);
+    color: var(--white);
+    box-shadow: 10px 10px 30px #FC581429;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    line-height: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.product .prod-images .item{
+    background-image: url("../assets/img/Mask\ Group\ 41.png");
+    background-color: #E3F8F9;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.product .prod-images .prod-carousel{
+    margin: 0 auto;
+}
+
+.product .mini-title h3{
+    font-size: 0.8rem;
+    letter-spacing: 3.9px;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+.product .title h2{
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.product .info{
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: capitalize;
+}
+
+.product .info .stock{
+    border-right: 1px solid #D6D6D6;
+}
+
+.product .info .stock .in{
+    color: #21A426;
+}
+
+.product .info .stock .out{
+    color: red;
+}
+
+.product .options .prod-svg-b{
+    fill: #D4D4D4;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.product .options i{
+    font-size: 1.5rem;
+    color: #D4D4D4;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.product .options .prod-svg-b:hover{
+    fill: var(--orange);
+}
+
+.product .options .prod-svg-b:focus-visible{
+    border: none;
+    outline: none;
+}
+
+.product .options i:hover{
+    color: var(--orange);
+}
+
+.product .price .actual{
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+.product .price .old{
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #D4D4D4;
+    text-decoration: line-through;
+}
+
+.product .desc p{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #C7C7C7;
+    margin-bottom: 0.5rem;
+}
+
+.product .desc p:last-child{
+    margin-bottom: 0;
+}
+
+.product label{
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.product .size-form input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.product .size .siz{
+    width: 37px;
+    height: 31px;
+    display: grid;
+    place-content: center;
+    border-radius: 6px;
+    background-color: #C7C7C7;
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 19px;
+    cursor: pointer;
+    transition: 0.1s all ease;
+}
+
+.product .size .siz:hover{
+    background-color: var(--orange);
+}
+
+.product .size .chosen{
+    font-size: 0.9rem;
+    color: #21A426;
+}
+
+.product .quantity .number{
+    width: 121px;
+    height: 37px;
+    border: 1px solid #C7C7C7;
+    border-radius: 6px;
+}
+
+.product .quantity .number span{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.product .quantity .number button{
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    transition: 0.1s all ease;
+}
+
+.product .quantity .number button:hover{
+    color: var(--orange);
+}
+
+.product .quantity .price{
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.product .quantity .price span{
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 22px;
+    color: var(--orange);
+}
+
+.product .submit .cart{
+    width: 140px;
+    height: 40px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .submit .check{
+    width: 155px;
+    height: 40px;
+    background-color: #DEF3F4;
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bad-section .bad-section-body .head h2{
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 34px;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.bad-section .bad-section-body .head p{
+    font-size: 0.875rem;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #C7C7C7;
+}
+
+.bad-section .bad-section-body .img-contain{
+    background-color: #F5F5F5;
+    height: 180px;
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+}
+
+.bad-section .bad-section-body .img-contain img{
+    
+}
+
+.bad-section .bad-section-body .content p{
+    font-size: 0.875rem;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #C7C7C7;
 }
 
 /* ----------------------------------------------------------------------------------------- */
