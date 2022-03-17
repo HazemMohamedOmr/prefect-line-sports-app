@@ -436,7 +436,7 @@ if(prods){
 
 let sizes = document.querySelectorAll(".size-form .item");
 
-if(sizes){
+if(sizes.length){
   let perv = sizes[0];
   perv.previousElementSibling.checked = true;
   perv.firstElementChild.classList.add("bg-orange");
@@ -451,6 +451,22 @@ if(sizes){
       s.previousElementSibling.checked = true;
       s.firstElementChild.classList.add("bg-orange");
       s.firstElementChild.nextElementSibling.classList.remove("d-none")
+    })
+  })
+}
+
+// payment cash
+
+let cash = document.getElementById("gridRadios3");
+let checkboxes = document.querySelectorAll(".form-check-input");
+if(cash){
+  let inputs = document.querySelectorAll(".online");
+  checkboxes.forEach(ch =>{
+    ch.addEventListener("input", ()=>{
+      if(cash.checked)
+        inputs.forEach(i => i.classList.add("d-none"));
+      else
+        inputs.forEach(i => i.classList.remove("d-none"));
     })
   })
 }
