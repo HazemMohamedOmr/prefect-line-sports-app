@@ -155,6 +155,44 @@ ul{
     display: none;
 }
 
+.home-sel{
+    width: 126px;
+    border-right: 1px var(--white) solid;
+}
+
+.home-sel .select2-container{
+    position: relative;
+    height: 100%;
+}
+
+.home-sel .selection .select2-selection{
+    background-color: inherit;
+    border: none;
+    border-radius: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    color: var(--white);
+}
+
+.home-sel .selection .select2-selection__rendered{
+    color: var(--white) !important;
+}
+
+.home-sel .selection .select2-selection__arrow{
+    height: auto;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+
+.cate-dropdown .select2-dropdown{
+    width: max-content !important;
+    top: 5px;
+    border-radius: 3px;
+}
+
 .select2-dropdown{
     border: none !important;
     box-shadow: 5px 22px 20px #0000000A;

@@ -214,6 +214,19 @@ $('.prod-carousel').owlCarousel({
   });
 }));
 
+($(document).ready(function() {
+  $('.home-category').select2({
+    width: '100%',
+    dropdownParent: $('.cate-dropdown')
+  });
+
+  // Adjusting Select2 ico
+  let selIco = document.querySelectorAll('.select2-selection__arrow');
+  selIco.forEach(element => {
+    element.innerHTML = "<i class='fas fa-angle-down'></i>";
+  });
+}));
+
 // Adjusting Owl nav elements
 let owlPrev = document.querySelectorAll('.owl-prev');
 owlPrev.forEach(element => {
