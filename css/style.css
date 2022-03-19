@@ -41,7 +41,7 @@ body{
 }
 
 .black{
-    color: var(--black);
+    color: var(--black) !important;
 }
 .bg-black{
     background-color: var(--black);
@@ -588,6 +588,49 @@ ul .menu:hover .ico{
     color: var(--black);
     transition: 0.2s ease;
 }
+
+.has-mega .mega-menu{
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    margin-top: 1rem;
+    box-shadow: 20px 30px 60px #00000012;
+}
+
+.has-mega .mega-menu .mega-container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x,0.75rem);
+    padding-left: var(--bs-gutter-x,1.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.has-mega .mega-menu .mega-container li{
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #B9B9B9;
+}
+
+.has-mega .mega-menu .mega-container li a{
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #B9B9B9;
+    transition: 0.2s all ease;
+}
+
+.has-mega .mega-menu .mega-container li a:hover{
+    color: var(--black);
+}
+
+.has-mega .mega-menu .mega-container li .special:hover{
+    color: var(--orange);
+}
+
+
 
 /* End of Header */
 
@@ -3641,10 +3684,6 @@ ul .menu:hover .ico{
     border-radius: 15px;
     display: grid;
     place-content: center;
-}
-
-.bad-section .bad-section-body .img-contain img{
-    
 }
 
 .bad-section .bad-section-body .content p{
