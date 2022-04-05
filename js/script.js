@@ -503,30 +503,22 @@ navbarMenu.addEventListener('click', (e) => {
 
 		// If menu-item-child is Expanded, then Collapse It
 		if (menuItemHasChildren.classList.contains('active')) {
-      console.log(menuItemHasChildren);
-      console.log("contains active");
       if(menuItemHasChildren.firstElementChild.getAttribute('data-toggle') == "sub-menu"){
-        console.log("collapsing sub menu");
         collapseSubMenu(menuItemHasChildren);
       }else if(menuItemHasChildren.firstElementChild.getAttribute('data-toggle') == "subsub-menu"){
-        console.log("collapsing subsub menu");
         collapseSubSubMenu(menuItemHasChildren);
       }
         
 		} else {
 			// Expanded the New menu-item-child
-      console.log(menuItemHasChildren);
 
 			menuItemHasChildren.classList.add('active');
       if(menuItemHasChildren.firstElementChild.getAttribute('data-toggle') == "sub-menu"){
-        console.log("Adding scroll height for sub menu");
         const subMenu = menuItemHasChildren.querySelector('.sub-menu');
 			  subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
-        console.log(subMenu);
       }if(menuItemHasChildren.firstElementChild.getAttribute('data-toggle') == "subsub-menu"){
         console.log("Adding scroll height for subsub menu");
         const subMenu = menuItemHasChildren.parentElement;
-        console.log(menuItemHasChildren.parentElement);
         const subsubMenu = menuItemHasChildren.querySelector('.subsub-menu');
         subsubMenu.style.maxHeight = subsubMenu.scrollHeight + 'px';
 			  subMenu.style.maxHeight = subMenu.scrollHeight + subsubMenu.scrollHeight + 'px';
