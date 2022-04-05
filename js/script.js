@@ -503,23 +503,46 @@ navbarMenu.addEventListener('click', (e) => {
 
 		// If menu-item-child is Expanded, then Collapse It
 		if (menuItemHasChildren.classList.contains('active')) {
-			collapseSubMenu();
+      console.log(menuItemHasChildren);
+      console.log("contains active");
+      if(menuItemHasChildren.firstElementChild.getAttribute('data-toggle') == "sub-menu"){
+        console.log("collapsing sub menu");
+        collapseSubMenu(menuItemHasChildren);
+      }else if(menuItemHasChildren.firstElementChild.getAttribute('data-toggle') == "subsub-menu"){
+        console.log("collapsing subsub menu");
+        collapseSubSubMenu(menuItemHasChildren);
+      }
+        
 		} else {
-			// Collapse the Existing Expanded menu-item-child
-			if (navbarMenu.querySelector('.menu-item-child.active')) {
-				collapseSubMenu();
-			}
 			// Expanded the New menu-item-child
+      console.log(menuItemHasChildren);
+
 			menuItemHasChildren.classList.add('active');
-			const subMenu = menuItemHasChildren.querySelector('.sub-menu');
-			subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+      if(menuItemHasChildren.firstElementChild.getAttribute('data-toggle') == "sub-menu"){
+        console.log("Adding scroll height for sub menu");
+        const subMenu = menuItemHasChildren.querySelector('.sub-menu');
+			  subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+        console.log(subMenu);
+      }if(menuItemHasChildren.firstElementChild.getAttribute('data-toggle') == "subsub-menu"){
+        console.log("Adding scroll height for subsub menu");
+        const subMenu = menuItemHasChildren.parentElement;
+        console.log(menuItemHasChildren.parentElement);
+        const subsubMenu = menuItemHasChildren.querySelector('.subsub-menu');
+        subsubMenu.style.maxHeight = subsubMenu.scrollHeight + 'px';
+			  subMenu.style.maxHeight = subMenu.scrollHeight + subsubMenu.scrollHeight + 'px';
+      }
 		}
 	}
 });
 
-function collapseSubMenu() {
-	navbarMenu.querySelector('.menu-item-child.active .sub-menu').removeAttribute('style');
-	navbarMenu.querySelector('.menu-item-child.active').classList.remove('active');
+function collapseSubMenu(item) {
+  item.firstElementChild.nextElementSibling.removeAttribute('style');
+	item.classList.remove('active');
+}
+
+function collapseSubSubMenu(item) {
+  item.firstElementChild.nextElementSibling.removeAttribute('style');
+	item.classList.remove('active');
 }
 
 // Fixed Resize Screen Function
