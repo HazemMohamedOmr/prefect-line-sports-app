@@ -1,3 +1,11 @@
+// loading screen
+$(document).ready(function(){
+  var loading = $(".wrapper");
+  loading.fadeOut();
+
+  document.querySelector('body').classList.remove("overf-y");
+});
+
 // toggle tooltip in navbar
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
