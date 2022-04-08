@@ -120,6 +120,46 @@ ul{
     z-index: -10;
 }
 
+#scrollToTop {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#scrollToTop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#scrollToTop:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#scrollToTop:active {
+    background-color: #555;
+}
+  
+#scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+  
     /* select input */
 
 .sel .select2-container{
