@@ -110,6 +110,24 @@ ul{
 
 /* common sections */
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 10px #ddd inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-orange);
+    transition: background-color 0.2s
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--orange);
+}
+
 #FirstNav{
     transition: box-shadow 0.3s;
 }
@@ -1928,7 +1946,7 @@ ul .menu:hover .ico{
 .thumb{
     background-image: url('../assets/img/pexels-rfstudio-3621104.png');
     background-size: cover;
-    height: 490px;
+    min-height: 490px;
     position: relative;
     box-shadow: 30px 60px 50px #0000000A;
 }
