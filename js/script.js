@@ -565,8 +565,8 @@ window.addEventListener('resize', () => {
 window.onscroll = function() {Stickyhead()};
 
 var header = document.querySelector('header');
-let firstNav = document.querySelector('#FirstNav');
-let secNav = document.querySelector('#secondNav');
+// let firstNav = document.querySelector('#FirstNav');
+// let secNav = document.querySelector('#secondNav');
 var sticky = header.offsetTop;
 
 var prevScrollpos = window.pageYOffset;
@@ -578,13 +578,13 @@ function Stickyhead() {
     header.classList.remove("sticky-top");
   }
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    firstNav.classList.remove("shadow-lg");
-    secNav.style.top = "0";
-  } else {
-    secNav.style.top = `-${secNav.clientHeight}px`;
-    firstNav.classList.add("shadow-lg");
-  }
+  // if (prevScrollpos > currentScrollPos) {
+  //   firstNav.classList.remove("shadow-lg");
+  //   secNav.style.top = "0";
+  // } else {
+  //   secNav.style.top = `-${secNav.clientHeight}px`;
+  //   firstNav.classList.add("shadow-lg");
+  // }
   prevScrollpos = currentScrollPos;
 }
 

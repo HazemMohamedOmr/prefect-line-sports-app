@@ -207,15 +207,14 @@ ul{
     background-color: var(--orange);
 }
 
-#FirstNav{
+/* #FirstNav{
     transition: box-shadow 0.3s;
+    z-index: 2;
 }
 
 #secondNav{
     transition: top 0.3s;
-    overflow: hidden;
-    z-index: -10;
-}
+} */
 
 #scrollToTop {
     display: inline-block;
