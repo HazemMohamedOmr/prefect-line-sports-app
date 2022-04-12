@@ -129,7 +129,6 @@ ul{
     display: flex;
     padding: 24px;
     min-height: 300px;
-    min-width: 400px;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -156,25 +155,25 @@ ul{
     perspective: 100000px;
   }
 .wrapper .loader span:nth-child(1) {
-    left:60px;
+    left:50px;
     animation: bounce2 1s cubic-bezier(0.04, 0.35, 0, 1) infinite;
     animation-delay: 0s;
     background: #ff756f;
   }
 .wrapper .loader span:nth-child(2) {
-    left:20px;
+    left:10px;
     animation: bounce2 1s cubic-bezier(0.04, 0.35, 0, 1) infinite;
     animation-delay: .2s;
     background: #ffde6f;
   }
 .wrapper .loader span:nth-child(3) {
-    left:-20px;
+    left:-30px;
     animation: bounce2 1s cubic-bezier(0.04, 0.35, 0, 1) infinite;
     animation-delay: .4s;
     background: #01de6f;
   }
 .wrapper .loader span:nth-child(4) {
-    left: -60px;
+    left: -70px;
     animation: bounce2 1s cubic-bezier(0.04, 0.35, 0, 1) infinite;
     animation-delay: .6s;
     background: #6f75ff;
