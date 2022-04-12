@@ -5250,6 +5250,22 @@ text-transform: uppercase;
 /* page25 */
 
 
+.e-m-slider-25-1 .item{
+    height: 150px;
+}
+
+.e-m-slider-25-1 .item img{
+    max-height: 100%;
+}
+
+.e-m-slider-25-3 .item{
+    height: 175px;
+}
+
+.e-m-slider-25-3 .item img{
+    max-height: 100%;
+}
+
 .e-m-slider-25-3 .item4 {
     background: url(../assets/img/4.3.0.png),url(../assets/img/25.3.2.png);
     background-size: cover,cover;

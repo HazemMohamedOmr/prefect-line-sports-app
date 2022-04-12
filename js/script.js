@@ -95,9 +95,9 @@ $('.thumbnail-slider').owlCarousel({
   margin:10,
   nav:true,
   items:1,
-  // autoplay:true,
-  // autoplayTimeout:5000,
-  // autoplayHoverPause:true,
+  autoplay:true,
+  autoplayTimeout:5000,
+  autoplayHoverPause:true,
 })
 
 $('.e-1-slider').owlCarousel({
