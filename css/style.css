@@ -5460,6 +5460,14 @@ text-transform: uppercase;
 
 /* page 13 */
 
+.gal-13 .gal-13-cont .img{
+    height: 250px;
+}
+
+.gal-13 .gal-13-cont .img img{
+    max-height: 100%;
+}
+
 .gal-13 .gal-13-cont .gal-13-body{
     border-left:4px solid #FF8A00;
     position: relative;
