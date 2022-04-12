@@ -2240,6 +2240,7 @@ ul .menu:hover .ico{
     background-image: url(../assets/img/Mask\ Group\ 4.png);
     height: 280px;
     position: relative;
+    padding-top: 14px;
 }
 
 .shop .preview .deal{
@@ -2259,8 +2260,10 @@ ul .menu:hover .ico{
 }
 
 .shop .preview img{
-    width: 230px;
-    height: 210px;
+    width: auto;
+    max-height: 74%;
+    margin: 0 auto;
+    display: block;
 }
 
 .shop .preview .options a{
