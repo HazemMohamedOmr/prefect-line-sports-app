@@ -3501,7 +3501,8 @@ ul .menu:hover .ico{
 }
 
 .about .floating-logo img{
-    width: 134px;
+    max-height: 100%;
+    padding: 14% 0;
 }
 
 .follow-us .head .mini-title h3{
@@ -4260,10 +4261,6 @@ ul .menu:hover .ico{
     .about .floating-logo{
         width: 362px;
         height: 362px;
-    }
-    
-    .about .floating-logo img{
-        width: 195px;
     }
 
     .follow-us .content{
