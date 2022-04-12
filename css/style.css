@@ -570,6 +570,20 @@ ul{
     align-items: center;
 }
 
+.partner .partner-slider .new-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner .partner-slider .new-item .title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
 .partner .partner-slider img{
     width: 112px;
     height: 112px;
