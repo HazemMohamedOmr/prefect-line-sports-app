@@ -3583,6 +3583,8 @@ ul .menu:hover .ico{
 
 .part .item img{
     transition: 0.2s transform ease;
+    width: 111px;
+    height: 111px;
 }
 
 .part .item:hover{
