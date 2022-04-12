@@ -2780,6 +2780,16 @@ ul .menu:hover .ico{
     margin: 10px;
 }
 
+.checkout .cart .content .item .prod-img{
+    max-height: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkout .cart .content .item .prod-img img{
+    max-height: 100%;
+}
+
 .checkout .cart .content .item .prod-info .prod-name{
     font-size: 1rem;
     font-weight: 800;
