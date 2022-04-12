@@ -674,6 +674,123 @@ ul{
 
     /* header */
 
+/* Upper header */
+
+.upper-header{
+    background-color: #d66401;
+    color: var(--gray-white);
+    position: relative;
+    z-index: 3;
+    font-size: 0.8rem;
+}
+
+.upper-header .right-items a{
+    color: var(--gray-white);
+    transition: all 0.2s ease;
+}
+
+.upper-header .right-items a:hover{
+    color: #281a09;
+}
+
+.upper-header .right-items a:hover .ico{
+    color: #281a09;
+}
+
+.upper-header .nav-item a{
+    text-transform: uppercase;
+}
+
+.upper-header .dropdown .dropdown-menu{
+    padding: 0;
+}
+
+.upper-header .dropdown .dropdown-menu a{
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.upper-header .dropdown .dropdown-menu li{
+    border-bottom: 1px solid #edeeee;
+    transition: background-color 0.2s ease;
+}
+
+.upper-header .dropdown .dropdown-menu li:last-of-type{
+    border-bottom: none;
+}
+
+.upper-header .dropdown .dropdown-menu li:hover{
+    background-color: #f8f9fa;
+}
+
+.upper-header .dropdown .dropdown-menu li:hover a{
+    color: var(--orange);
+}
+
+.upper-header .dropdown .ico{
+    top: 4px;
+    right: -14px;
+    color: var(--gray-white);
+}
+
+.offcanvas .head{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.offcanvas .head a{
+    color: var(--black);
+    transition: all 0.2s ease;
+}
+
+.offcanvas .head a:hover{
+    color: var(--orange);
+}
+
+.offcanvas .head a:hover .ico{
+    color: var(--orange);
+}
+
+.offcanvas .nav-item a{
+    text-transform: uppercase;
+}
+
+.offcanvas .head .dropdown-menu{
+    padding: 0;
+}
+
+.offcanvas .head .dropdown-menu a{
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.offcanvas .head .dropdown-menu li{
+    border-bottom: 1px solid #edeeee;
+    transition: background-color 0.2s ease;
+}
+
+.offcanvas .head .dropdown-menu li:last-of-type{
+    border-bottom: none;
+}
+
+.offcanvas .head .dropdown-menu li:hover{
+    background-color: #f8f9fa;
+}
+
+.offcanvas .head .dropdown-menu li:hover a{
+    color: var(--orange);
+}
+
+.offcanvas .head .ico{
+    top: 4px;
+    right: -16px;
+    color: var(--black);
+}
+
+/* End of Upper header */
+
 .navbar-brand .logo{
     width: 5em;
 }
