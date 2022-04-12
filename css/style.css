@@ -4127,6 +4127,11 @@ ul .menu:hover .ico{
     place-content: center;
 }
 
+.bad-section .bad-section-body .img-contain img{
+    max-height: 100%;
+    margin: 0 auto;
+}
+
 .bad-section .bad-section-body .content p{
     font-size: 0.875rem;
     line-height: 22px;
