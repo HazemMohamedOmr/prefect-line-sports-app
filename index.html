@@ -18,39 +18,312 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../assets/select2-4.0.13/select2.min.css">
+
     <!-- Main style sheet -->
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://kit.fontawesome.com/9730010a29.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body class="overf-y">
+
+    <section class="wrapper">
+      <div class="cards">
+        <div class="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
 
     <header>
 
+      <div class="upper-header d-none d-lg-block">
+        <div class="container py-1 d-flex justify-content-between">
+          <div class="left-items">
+            <ul class="d-flex mb-0">
+              <li>
+                <i class="fas fa-truck"></i>
+                <span>Free Delivery</span>
+              </li>
+              <li class="ms-2">
+                <i class="fas fa-hand-holding-usd"></i>
+                <span>Cash on Delivery</span>
+              </li>
+            </ul>
+          </div>
+          <div class="right-items">
+            <ul class="d-flex mb-0">
+              <li class="nav-item dropdown me-3">
+                <a class="dropdown-toggle-m d-flex justify-content-between align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/img/united-arab-emirates.png" alt="" class="me-1" style="max-height: 19px;">
+                  UAE - USD
+                  <i class="ico fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                      others - USD
+                      <img src="assets/img/united-states-of-america.png" alt="" style="max-height: 19px;">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                      uae - aed
+                      <img src="assets/img/united-arab-emirates.png" alt="" style="max-height: 19px;">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                      ksa - sar
+                      <img src="assets/img/saudi-arabia.png" alt="" style="max-height: 19px;">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                      kuwait - kwd
+                      <img src="assets/img/kuwait.png" alt="" style="max-height: 19px;">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                      bahrain - bhd
+                      <img src="assets/img/bahrain.png" alt="" style="max-height: 19px;">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                      egypt - egp
+                      <img src="assets/img/egypt.png" alt="" style="max-height: 19px;">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                      qatar - qar
+                      <img src="assets/img/qatar.png" alt="" style="max-height: 19px;">
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="ms-2">
+                <a href=""><span>Our Store</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <!-- NavBar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-orange display-block flex-column">
+      <nav id="FirstNav" class="navbar navbar-expand-lg navbar-light bg-orange flex-column">
         <div class="container d-flex justify-content-between">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand me-0" href="index.html">
             <img class="logo" src="assets/img/logo_h.png" alt="Perfect Line Sports Products Logo">
             <span class="white text-uppercase">Perfect line Sports Products L.L.C</span>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasRight">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="search-box">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+            <div class="offcanvas-header px-4">
+              <img src="assets/img/logo_23.png" alt="">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body pt-0 flex-grow-0">
+              <nav class="navbars" id="navbar">
+                <ul class="menu">
+                   <li class="menu-item"><a href="#">Home</a></li>
+                   <li class="menu-item"><a href="#">About</a></li>
+                   <li class="menu-item menu-item-child">
+                      <a href="#" data-toggle="sub-menu">Services<i class="expand"></i></a>
+                      <ul class="sub-menu">
+                         <li class="menu-item"><a href="#">Web Design</a></li>
+                         <li class="menu-item"><a href="#">Web Development</a></li>
+                         <li class="menu-item"><a href="#">Brand Marketing</a></li>
+                         <li class="menu-item"><a href="#">SEO and Optimizing</a></li>
+                      </ul>
+                   </li>
+                   <li class="menu-item menu-item-child">
+                      <a href="#" data-toggle="sub-menu">Planning <i class="expand"></i></a>
+                      <ul class="sub-menu">
+                         <li class="menu-item"><a href="#">Basic</a></li>
+                         <li class="menu-item"><a href="#">Basic</a></li>
+                         <li class="menu-item menu-item-child">
+                          <a href="#" data-toggle="subsub-menu">Services<i class="expand"></i></a>
+                          <ul class="subsub-menu">
+                             <li class="menu-item"><a href="#">Web Design</a></li>
+                             <li class="menu-item"><a href="#">Web Development</a></li>
+                             <li class="menu-item"><a href="#">Brand Marketing</a></li>
+                             <li class="menu-item"><a href="#">SEO and Optimizing</a></li>
+                          </ul>
+                         </li>
+                         <li class="menu-item"><a href="#">Basic</a></li>
+                         <li class="menu-item"><a href="#">Basic</a></li>
+                         <li class="menu-item menu-item-child">
+                          <a href="#" data-toggle="subsub-menu">Services<i class="expand"></i></a>
+                          <ul class="subsub-menu">
+                             <li class="menu-item"><a href="#">Web Design</a></li>
+                             <li class="menu-item"><a href="#">Web Development</a></li>
+                             <li class="menu-item"><a href="#">Brand Marketing</a></li>
+                             <li class="menu-item"><a href="#">SEO and Optimizing</a></li>
+                          </ul>
+                         </li>
+                         <li class="menu-item"><a href="#">Standard</a></li>
+                         <li class="menu-item"><a href="#">Premium</a></li>
+                         <li class="menu-item"><a href="#">Professional</a></li>
+                      </ul>
+                   </li>
+                   <li class="menu-item menu-item-child">
+                      <a href="#" data-toggle="sub-menu">Projects <i class="expand"></i></a>
+                      <ul class="sub-menu">
+                         <li class="menu-item"><a href="#">Design Project</a></li>
+                         <li class="menu-item"><a href="#">Development Project</a></li>
+                         <li class="menu-item"><a href="#">Branding Project</a></li>
+                         <li class="menu-item"><a href="#">Others Project</a></li>
+                      </ul>
+                   </li>
+                   <li class="menu-item"><a href="#">Contact</a></li>
+                </ul>
+             </nav>
+            </div>
+            <div class="container">
+              <ul class="head d-flex justify-content-between align-items-center mb-0">
+                <li class="nav-item dropdown me-3">
+                  <a class="dropdown-toggle-m d-flex justify-content-between align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/img/united-arab-emirates.png" alt="" class="me-1" style="max-height: 19px;">
+                    UAE - USD
+                    <i class="ico fas fa-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        others - USD
+                        <img src="assets/img/united-states-of-america.png" alt="" style="max-height: 19px;">
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        uae - aed
+                        <img src="assets/img/united-arab-emirates.png" alt="" style="max-height: 19px;">
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        ksa - sar
+                        <img src="assets/img/saudi-arabia.png" alt="" style="max-height: 19px;">
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        kuwait - kwd
+                        <img src="assets/img/kuwait.png" alt="" style="max-height: 19px;">
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        bahrain - bhd
+                        <img src="assets/img/bahrain.png" alt="" style="max-height: 19px;">
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        egypt - egp
+                        <img src="assets/img/egypt.png" alt="" style="max-height: 19px;">
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        qatar - qar
+                        <img src="assets/img/qatar.png" alt="" style="max-height: 19px;">
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="ms-2">
+                  <a href=""><span>Our Store</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-footer py-3">
+              <div class="d-flex justify-content-center icons">
+                <div class="svg-container text-center position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cart">
+                  <a href="">
+                    <svg class="nav-svg nav-svg-b" fill="orange" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <circle cx="13.5" cy="29.5" r="2.5" class="clr-i-solid clr-i-solid-path-1"></circle><circle cx="26.5" cy="29.5" r="2.5" class="clr-i-solid clr-i-solid-path-2"></circle><path d="M33.1,6.39A1,1,0,0,0,32.31,6H9.21L8.76,4.57a1,1,0,0,0-.66-.65L4,2.66a1,1,0,1,0-.59,1.92L7,5.68l4.58,14.47L9.95,21.49l-.13.13A2.66,2.66,0,0,0,9.74,25,2.75,2.75,0,0,0,12,26H28.69a1,1,0,0,0,0-2H11.84a.67.67,0,0,1-.56-1l2.41-2H29.12a1,1,0,0,0,1-.76l3.2-13A1,1,0,0,0,33.1,6.39Z" class="clr-i-solid clr-i-solid-path-3"></path>
+                      <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
+                    </svg>
+                  </a>
+                  <div class="notification">
+                    2
+                  </div>
+                </div>
+                <div class="svg-container text-center ms-4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="What is that?">
+                  <a href="">
+                    <svg class="nav-svg nav-svg-b" fill="orange" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M213.65723,181.65723l-32,32A8.00038,8.00038,0,0,1,168,208V184H48a8,8,0,0,1,0-16H168V144a8.00038,8.00038,0,0,1,13.65723-5.65723l32,32A8.00122,8.00122,0,0,1,213.65723,181.65723Zm-139.31446-64A8.00038,8.00038,0,0,0,88,112V88H208a8,8,0,0,0,0-16H88V48a8.00038,8.00038,0,0,0-13.65723-5.65723l-32,32a8.00122,8.00122,0,0,0,0,11.31446Z"/>
+                    </svg>    
+                  </a>          
+                </div>
+                <div class="svg-container text-center ms-4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Favorites">
+                  <a href="">
+                    <svg class="nav-svg" fill="orange" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 230 230" style="enable-background:new 0 0 230 230;" xml:space="preserve">
+                      <path d="M213.588,120.982L115,213.445l-98.588-92.463C-6.537,96.466-5.26,57.99,19.248,35.047l2.227-2.083
+                      c24.51-22.942,62.984-21.674,85.934,2.842L115,43.709l7.592-7.903c22.949-24.516,61.424-25.784,85.936-2.842l2.227,2.083
+                      C235.26,57.99,236.537,96.466,213.588,120.982z"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="svg-container text-center ms-4 position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Account">
+                  <a class="" id="userDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="nav-svg" fill="orange" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"/></svg>
+                  </a>
+                  <ul class="dropdown-menu user-sign" aria-labelledby="userDropdown" >
+                    <li><a class="dropdown-item" href="pages/sign-in.html">Sign in</a></li>
+                    <li><a class="dropdown-item" href="pages/sign-up.html">Sign up</a></li>
+                  </ul>
+                </div>
+                <div class="svg-container text-center ms-4 position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Language">
+                  <a class="" id="userDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/img/england.png" class="img-fluid" style="width: 25px;" alt="">
+                  </a>
+                  <ul class="dropdown-menu user-sign" aria-labelledby="userDropdown" >
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center" href="pages/sign-in.html">
+                        <img src="assets/img/england.png" class="img-fluid me-1" style="width: 25px;" alt="">
+                        English
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center" href="pages/sign-up.html">
+                        <img src="assets/img/united-arab-emirates.png" class="img-fluid me-1" style="width: 25px;" alt="">
+                        Arabic
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-box w-100">
             <form action="" method="" class="d-flex">
-              <select name="category" id="">
-                <option selected>Categories</option>
-                <option value="">Football</option>
-                <option value="">GPS Tracking & Performance</option>
-                <option value="">Fitness</option>
-                <option value="">Gym Equipments</option>
-                <option value="">Sports Equipments</option>
-                <option value="">Injury Products</option>
-                <option value="">Toys % Early Learning</option>
-                <option value="">Team Products</option>
-              </select>
+              <div class="home-sel">
+                <select class="home-category" name="category">
+                  <option selected disabled>Categories</option>
+                  <option value="">Football</option>
+                  <option value="">GPS Tracking & Performance</option>
+                  <option value="">Fitness</option>
+                  <option value="">Gym Equipments</option>
+                  <option value="">Sports Equipments</option>
+                  <option value="">Injury Products</option>
+                  <option value="">Toys % Early Learning</option>
+                  <option value="">Team Products</option>
+                </select>
+                <div class="cate-dropdown"></div>
+              </div>
               <input class=" me-2" name="search" type="search" placeholder="Product Name" aria-label="Search">
               <a class="btn" type="submit">
                 <svg class="nav-svg" fill="white" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -62,7 +335,7 @@
               </a>
             </form>
           </div>
-          <div class="d-flex justify-content-end icons">
+          <div class="d-none d-lg-flex justify-content-end icons">
             <div class="svg-container text-center position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cart">
               <a href="">
                 <svg class="nav-svg nav-svg-b" fill="white" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -100,34 +373,383 @@
                 <li><a class="dropdown-item" href="pages/sign-up.html">Sign up</a></li>
               </ul>
             </div>
+            <div class="svg-container text-center ms-4 position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Language">
+              <a class="" id="userDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/img/england.png" class="img-fluid" style="width: 25px;" alt="">
+              </a>
+              <ul class="dropdown-menu user-sign" aria-labelledby="userDropdown" >
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="pages/sign-in.html">
+                    <img src="assets/img/england.png" class="img-fluid me-1" style="width: 25px;" alt="">
+                    English
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="pages/sign-up.html">
+                    <img src="assets/img/united-arab-emirates.png" class="img-fluid me-1" style="width: 25px;" alt="">
+                    Arabic
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-white display-block flex-column py-3">
+      <nav id="secondNav" class="navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex flex-column py-3">
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link dropdown-toggle-m menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown me-3 position-static has-mega">
+                <a class="nav-link dropdown-toggle-m menu position-relative" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Football
                   <i class="ico fas fa-chevron-down"></i>
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="pages/shop.html">Shop Page</a></li>
-                  <li><a class="dropdown-item" href="pages/cart.html">Cart Page</a></li>
-                  <li><a class="dropdown-item" href="pages/shopAddress.html">Shop Address Page</a></li>
-                  <li><a class="dropdown-item" href="pages/payment.html">Payment Page</a></li>
-                  <li><a class="dropdown-item" href="pages/ShippingPolicies.html">Shipping Policies Page</a></li>
-                  <li><a class="dropdown-item" href="pages/affiliate32.html">Affiliate Page</a></li>
-                  <li><a class="dropdown-item" href="pages/careers33.html">Careers Page</a></li>
-                  <li><a class="dropdown-item" href="pages/hiring34.html">Hire Page</a></li>
-                  <li><a class="dropdown-item" href="pages/solutions31.html">Solutions For Businesses Page</a></li>
-                  <li><a class="dropdown-item" href="pages/facilities30.html">Solutions For Residential Complexes Page</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="pages/sign-up.html">Sign Up Page</a></li>
-                  <li><a class="dropdown-item" href="pages/sign-in.html">Sign In Page</a></li>
-                  <li><a class="dropdown-item" href="pages/thanks-sign-up.html">Thx-left cart Page</a></li>
+                <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                  <div class="mega-container">
+                    <div class="row">
+                      <div class="col-2 py-4">
+                        <li class="d-flex align-items-center mb-3 orange">
+                          <img class="me-2" src="assets/img/mega1.png" alt="">
+                          Saudi League
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega2.png" alt="" class="me-1">
+                            Al Ahly Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega3.png" alt="" class="me-1">
+                            Albatin Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega4.png" alt="" class="me-1">
+                            Alfath Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega5.png" alt="" class="me-1">
+                            Alshabab Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega6.png" alt="" class="me-1">
+                            Alfayha Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega7.png" alt="" class="me-1">
+                            Alraayid Team
+                          </a>
+                        </li>
+                        <li class="ms-3 mt-4">
+                          <a class="d-flex align-items-center special" href="#">
+                            Explore All Teams
+                            <i class="ms-1 fas fa-long-arrow-alt-right"></i>
+                          </a>
+                        </li>
+                      </div>
+                      <div class="col-2 py-4">
+                        <li class="d-flex align-items-center mb-3 orange">
+                          <img class="me-2" src="assets/img/mega1.png" alt="">
+                          Saudi League
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega2.png" alt="" class="me-1">
+                            Al Ahly Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega3.png" alt="" class="me-1">
+                            Albatin Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega4.png" alt="" class="me-1">
+                            Alfath Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega5.png" alt="" class="me-1">
+                            Alshabab Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega6.png" alt="" class="me-1">
+                            Alfayha Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega7.png" alt="" class="me-1">
+                            Alraayid Team
+                          </a>
+                        </li>
+                        <li class="ms-3 mt-4">
+                          <a class="d-flex align-items-center special" href="#">
+                            Explore All Teams
+                            <i class="ms-1 fas fa-long-arrow-alt-right"></i>
+                          </a>
+                        </li>
+                      </div>
+                      <div class="col-2 py-4">
+                        <li class="d-flex align-items-center mb-3 orange">
+                          <img class="me-2" src="assets/img/mega1.png" alt="">
+                          Saudi League
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega2.png" alt="" class="me-1">
+                            Al Ahly Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega3.png" alt="" class="me-1">
+                            Albatin Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega4.png" alt="" class="me-1">
+                            Alfath Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega5.png" alt="" class="me-1">
+                            Alshabab Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega6.png" alt="" class="me-1">
+                            Alfayha Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega7.png" alt="" class="me-1">
+                            Alraayid Team
+                          </a>
+                        </li>
+                        <li class="ms-3 mt-4">
+                          <a class="d-flex align-items-center special" href="#">
+                            Explore All Teams
+                            <i class="ms-1 fas fa-long-arrow-alt-right"></i>
+                          </a>
+                        </li>
+                      </div>
+                      <div class="col-2 py-4">
+                        <li class="d-flex align-items-center mb-3 orange">
+                          <img class="me-2" src="assets/img/mega1.png" alt="">
+                          Saudi League
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega2.png" alt="" class="me-1">
+                            Al Ahly Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega3.png" alt="" class="me-1">
+                            Albatin Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega4.png" alt="" class="me-1">
+                            Alfath Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega5.png" alt="" class="me-1">
+                            Alshabab Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega6.png" alt="" class="me-1">
+                            Alfayha Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega7.png" alt="" class="me-1">
+                            Alraayid Team
+                          </a>
+                        </li>
+                        <li class="ms-3 mt-4">
+                          <a class="d-flex align-items-center special" href="#">
+                            Explore All Teams
+                            <i class="ms-1 fas fa-long-arrow-alt-right"></i>
+                          </a>
+                        </li>
+                      </div>
+                      <div class="col-2 py-4">
+                        <li class="d-flex align-items-center mb-3 orange">
+                          <img class="me-2" src="assets/img/mega1.png" alt="">
+                          Saudi League
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega2.png" alt="" class="me-1">
+                            Al Ahly Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega3.png" alt="" class="me-1">
+                            Albatin Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega4.png" alt="" class="me-1">
+                            Alfath Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega5.png" alt="" class="me-1">
+                            Alshabab Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega6.png" alt="" class="me-1">
+                            Alfayha Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega7.png" alt="" class="me-1">
+                            Alraayid Team
+                          </a>
+                        </li>
+                        <li class="ms-3 mt-4">
+                          <a class="d-flex align-items-center special" href="#">
+                            Explore All Teams
+                            <i class="ms-1 fas fa-long-arrow-alt-right"></i>
+                          </a>
+                        </li>
+                      </div>
+                      <div class="col-2 py-4">
+                        <li class="d-flex align-items-center mb-3 orange">
+                          <img class="me-2" src="assets/img/mega1.png" alt="">
+                          Saudi League
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega2.png" alt="" class="me-1">
+                            Al Ahly Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega3.png" alt="" class="me-1">
+                            Albatin Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega4.png" alt="" class="me-1">
+                            Alfath Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega5.png" alt="" class="me-1">
+                            Alshabab Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega6.png" alt="" class="me-1">
+                            Alfayha Team
+                          </a>
+                        </li>
+                        <li class="ms-4 mb-2">
+                          <a class="d-flex align-items-center" href="#">
+                            <img src="assets/img/mega7.png" alt="" class="me-1">
+                            Alraayid Team
+                          </a>
+                        </li>
+                        <li class="ms-3 mt-4">
+                          <a class="d-flex align-items-center special" href="#">
+                            Explore All Teams
+                            <i class="ms-1 fas fa-long-arrow-alt-right"></i>
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                    <li><hr class="dropdown-divider"></li>
+                    <div class="d-flex align-items-center">
+                      <li class="d-flex align-items-center pe-4 black">
+                        National Teams
+                      </li>
+                      <div class="py-2 ps-4 pe-5">
+                        <a href="#" class="">
+                          <img src="assets/img/arse-2.png" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Arsenal">
+                        </a>
+                      </div>
+                      <div class="py-2 ps-4 pe-5">
+                        <a href="#" class="">
+                          <img src="assets/img/arse-2.png" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Arsenal">
+                        </a>
+                      </div>
+                      <div class="py-2 ps-4 pe-5">
+                        <a href="#" class="">
+                          <img src="assets/img/arse-2.png" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Arsenal">
+                        </a>
+                      </div>
+                      <div class="py-2 ps-4 pe-5">
+                        <a href="#" class="">
+                          <img src="assets/img/arse-2.png" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Arsenal">
+                        </a>
+                      </div>
+                      <div class="py-2 ps-4 pe-5">
+                        <a href="#" class="">
+                          <img src="assets/img/arse-2.png" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Arsenal">
+                        </a>
+                      </div>
+                      <div class="py-2 ps-4 pe-5">
+                        <a href="#" class="">
+                          <img src="assets/img/arse-2.png" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Arsenal">
+                        </a>
+                      </div>
+                      <div class="py-2 ps-4 pe-5">
+                        <a href="#" class="">
+                          <img src="assets/img/arse-2.png" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Arsenal">
+                        </a>
+                      </div>
+                      <div class="py-2 ps-4 pe-5">
+                        <a href="#" class="">
+                          <img src="assets/img/arse-2.png" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Arsenal">
+                        </a>
+                      </div>
+                      <li class="ms-3">
+                        <a class="d-flex align-items-center special" href="#">
+                          Explore All Teams
+                          <i class="ms-1 fas fa-long-arrow-alt-right"></i>
+                        </a>
+                      </li>
+                    </div>
+                  </div>
                 </ul>
               </li>
 
@@ -369,6 +991,99 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="partner py-5">
+      <div class="container">
+          <div class="title py-4">
+              <div class="mini-title">
+                  our partners
+              </div>
+              <div class="qoute">
+                  success is what we do
+              </div>
+          </div>
+          <div class="partner-slider owl-carousel owl-theme py-4 my-5">
+              <div class="new-item">
+                  <img src="assets/img/1618044336c4.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044362c5.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044414c7.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044456c9.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044336c4.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044362c5.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044414c7.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044456c9.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044456c9.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044336c4.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044362c5.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044414c7.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+              <div class="new-item">
+                  <img src="assets/img/1618044456c9.png" alt="">
+                  <div class="title pt-2 pb-4">
+                    A Qoute Title
+                  </div>
+              </div>
+          </div>
       </div>
     </section>
 
@@ -779,7 +1494,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-6 d-none d-lg-block">
+                  <div class="col-md-6 d-none d-lg-flex justify-content-center">
                     <img src="assets/img/pngegg (9).png" alt="">
                   </div>
                 </div>
@@ -1531,19 +2246,19 @@
 
               <div class="timer d-flex justify-content-between align-items-center">
                 <div class="item d-flex flex-column justify-content-between align-items-center">
-                  <div class="time" id="days">2</div>
+                  <div class="time" id="days">0</div>
                   <div class="indic">Days</div>
                 </div>
                 <div class="item d-flex flex-column justify-content-between align-items-center">
-                  <div class="time" id="hours">2</div>
+                  <div class="time" id="hours">0</div>
                   <div class="indic">hours</div>
                 </div>
                 <div class="item d-flex flex-column justify-content-between align-items-center">
-                  <div class="time" id="mins">2</div>
+                  <div class="time" id="mins">0</div>
                   <div class="indic">min</div>
                 </div>
                 <div class="item d-flex flex-column justify-content-between align-items-center">
-                  <div class="time" id="secs">2</div>
+                  <div class="time" id="secs">0</div>
                   <div class="indic">sec</div>
                 </div>
               </div>
@@ -1591,7 +2306,7 @@
     <section class="blog py-5">
       <div class="container">
         <div class="row pt-5 pb-4">
-          <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+          <div class="col-md-6 col-lg-4 mb-3">
             <div class="item p-3">
               <div class="img">
                 <a href="#">
@@ -1620,7 +2335,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+          <div class="col-md-6 col-lg-4 mb-3">
             <div class="item p-3">
               <div class="img">
                 <a href="#">
@@ -2057,6 +2772,9 @@
       </div>
     </footer>
 
+    <!-- Back to top button -->
+    <a id="scrollToTop"></a>
+
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
@@ -2068,6 +2786,9 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9730010a29.js" crossorigin="anonymous"></script>
+    
+    <!-- Select2 -->
+    <script src="../assets/select2-4.0.13/select2.min.js"></script>
 
     <!-- Main JS -->
     <script src="js/script.js"></script>
